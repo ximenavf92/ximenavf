@@ -1,0 +1,175 @@
+/* Main Styles VanillaJS Academy 2020 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    position: relative;
+}
+
+a:focus {
+    outline: none;
+    border: solid 3px rgba(152, 84, 203, 1);
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+}
+
+body {
+    margin: 3em auto;
+    max-width: 60em;
+    width: 95%;
+    background: #0f0f0f;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 25vh;
+}
+
+.splash-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.info-block {
+    grid-area: 1 / 1 / 4 / 4;
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 .3em;
+    letter-spacing: .01em;
+    font-size: 3em;
+    font-size: calc(2.5em + (20 - 2.5) * ((100vw - 320px) / (2000 - 320)));
+}
+
+.name-sub {
+    margin: 0 0 0 .5em;
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: .1em;
+    width: max-content;
+    padding: 15px 25px;
+    background: rgb(77, 21, 175);
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 auto;
+    -webkit-transform: rotate(0) -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.name-sub:hover {
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.short-bio {
+    font-size: .9em;
+    line-height: 1.8em;
+    font-size: calc(.9em + (1.5 - .9) * ((100vw - 320px) / (2000 - 320)));
+}
+
+.short-bio a {
+    color: #ffffff;
+    /* border: solid 1.5px rgba(152, 84, 203, 1); */
+    /* padding: 2px 8px 5px; */
+    /* margin: 2px; */
+    text-decoration: none;
+    /* border-radius: 5px; */
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* color: rgba(152, 84, 203, 1);
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, .3); */
+}
+
+.short-bio a:hover,
+.short-bio a:focus {
+    background: rgba(152, 84, 203, 1);
+    background: rgb(77, 21, 175);
+    border: none;
+    padding: 5px 10px;
+}
+
+.headshot {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 4 / 4 / 6;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.headshot:hover {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.headshot img {
+    width: 100%;
+    align-self: center;
+    justify-self: right;
+    box-shadow: 15px 15px 0 rgb(77, 21, 175);
+}
+
+.social-icons {
+    list-style-type: none;
+    margin: 1em auto;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.social-icons li {
+    display: inline-flex;
+    margin: 10px 5px 0;
+    padding: 8px 10px 5px;
+}
+
+.social-icons li:hover,
+.social-icons li a:focus {
+    background: rgb(77, 21, 175);
+    border: none;
+    -webkit-transition: .3s ease-in;
+        -o-transition: .3s ease-in;
+        transition: .3s ease-in;
+}
+
+.social-icons li a:focus {
+    padding: 10px 10px 5px;
+}
+
+.social-icons li img {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 3em 1em;
+    }
+
+    .splash-grid {
+        display: block;
+    }
+
+    .headshot img {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 2em 0 0 1em;
+    }
+}
