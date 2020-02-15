@@ -226,10 +226,18 @@ h1 {
     .headshot {
         grid-area: 1 / 1 / 2 / 2;
         align-self: start;
-        margin: 0 auto 2em;
+        text-align: center;
     }
 
     .info-block {
         grid-area: 2 / 1 / 3 / 2;;
+    }
+
+    @media (max-width: 600px) {
+        .headshot {
+            align-self: start;
+            text-align: left;
+            margin: 0 auto 2em;
+        }
     }
 }
