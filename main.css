@@ -1,8 +1,4 @@
 /* Main Styles 2020 */
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,800&display=swap');
-
 :root {
     --cols: 8;
     --gridSize: calc(100vw / var(--cols));
@@ -22,8 +18,6 @@
 a:focus {
     outline: none;
     border: solid 3px var(--mainColor);
-    /* padding: 5px; */
-    /* border-radius: 5px; */
 }
 
 body {
@@ -51,13 +45,10 @@ html::-webkit-scrollbar-track {
     background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17);
     background: #0f0f0f;
     box-shadow: inset 1px 1px 5px rgba(40, 43, 73, .3);
-    /* box-shadow: inset 1px 1px 4px rgba(254, 249, 226,.8); */
-    /* background: var(--backgroundColor); */
     width: 10px;
 }
 
 /* === Background Grid === */
-
 body:before, body:after {
     z-index: -1;
     content: '';
@@ -85,7 +76,6 @@ body:before {
 }
 
 /* === Main Content === */
-
 .main-content {
     margin: 25vh auto;
     max-width: 60em;
@@ -126,13 +116,11 @@ h1 {
     background: var(--mainColor);
     text-decoration: none;
     color: #ffffff;
-    /* margin: 0 auto; */
     -webkit-transform: rotate(0) -ms-transform: rotate(0);
     transform: rotate(0);
 }
 
 /* --- Short Bio --- */
-
 .short-bio {
     font-size: .9em;
     line-height: 1.8em;
@@ -165,7 +153,6 @@ h1 {
 }
 
 /* --- Headhsot --- */
-
 .headshot {
     grid-area: 1 / 4 / 4 / 6;
     -webkit-transform: rotate(5deg);
@@ -191,7 +178,6 @@ h1 {
 }
 
 /* --- Social Icons */
-
 .social-icons {
     list-style-type: none;
     margin: 1em auto;
@@ -232,7 +218,6 @@ footer {
     position: fixed;
     bottom: 0;
     background: var(--mainColor);
-    /* background: rgba(0, 0, 0, .45); */
     margin: 0;
     width: 100%;
     padding: 1em 0;
