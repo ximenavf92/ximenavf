@@ -127,7 +127,7 @@ h1 {
     background: var(--mainColor);
     text-decoration: none;
     color: #ffffff;
-    -webkit-transform: rotate(0) -ms-transform: rotate(0);
+    --webkit-transform: rotate(0) -ms-transform: rotate(0);
     transform: rotate(0);
 }
 

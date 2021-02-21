@@ -1,0 +1,20 @@
+{
+  "title": "Ximena Vila Ferral – Designer & Developer",
+  "url": "https://ximenavf.com/",
+  "description": "Design & Code",
+  "feed": {
+    "subtitle": "Design & Code",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://ximenavf.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://ximenavf.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Ximena Vila Ferral",
+    "email": "hola@ximenavf.com",
+    "url": "https://ximenavf.com/about-me/"
+  }
+}
