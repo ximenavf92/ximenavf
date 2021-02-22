@@ -37,6 +37,14 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
+  eleventyConfig.addFilter( "uppercase", (string) => {
+    return string.toUpperCase();
+  });  
+
+  eleventyConfig.addFilter( "lowercase", (string) => {
+    return string.toLowerCase();
+  });  
+
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function(item) {
@@ -66,9 +74,7 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("files");
+  eleventyConfig.addPassthroughCopy("assets");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
