@@ -201,8 +201,8 @@ layout: layouts/home.njk
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
 </section> -->
 
-<!-- TODO: Hangout Sections -->
-<div class="inner-section hangout-section">
+TODO: Hangout Sections
+<section class="inner-section hangout-section">
         <h2>You can usually find me here…</h2>
         <ul class="hangout-grid">
             {% for hang in hangouts.hangouts %}
@@ -218,6 +218,31 @@ layout: layouts/home.njk
             </li>
             {% endfor %}
         </ul>
-</div>
+</section>
 
 <!-- TODO: Contact Section -->
+<section class="inner-section contact-section">
+  <div class="container">
+    <div class="form-box">
+      <h2>Let's Chat!</h2>
+      <p>Send me an email at <a href="mailto:hola@ximenavf.com">hola@ximenavf.com</a> or leave me a message below</p>
+      <form class="contact-form" name="contact" method="POST" netlify >
+        <!-- <div class="form-2-col-fields"> -->
+          <label for="name" class="form-field--name">Name
+            <input id="name" type="text">
+         </label>
+          
+          <label for="email" class="form-field--email">Email
+            <input id="email" type="email">
+          </label>
+        <!-- </div> -->
+
+        <label for="message" class="form-field--message">Message
+          <input id="message" type="text">
+        </label>
+
+        <button type="submit" class="button button-primary--icon">Send Message</button></form>
+    </div>
+  </div>
+  <div class="container"><img src="/assets/img/contact-laptop-illustration.svg" alt="" class="contact-section--illustration"></div>
+</section>
