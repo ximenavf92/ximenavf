@@ -353,6 +353,7 @@ pre {
       bottom: 0;
       left: 0;
       right: 0;
+    z-index: 10;
   }
 
   /* .mobile-nav .nav {
@@ -473,7 +474,7 @@ pre {
   position: relative;
     top: .3em;
   margin-right: .75em;
-  vertical-align: sub;
+  vertical-align: baseline;
 }
 
 .button-list {
@@ -735,6 +736,7 @@ h2 {
  }
 
  .project-card--image {
+   max-width: 100%;
    width: 100%;
    border-radius: var(--borderRadius);
  }
@@ -795,7 +797,7 @@ h2 {
 
 /* Hangout Section */
 .hangout-section h2 {
-  margin-bottom: 1em;
+  margin-bottom: .25em;
 }
 
 .hangout-grid {
@@ -807,6 +809,11 @@ h2 {
   align-content: start;
   gap: 1em 3em;
   grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  margin-top: -1em;
+ }
+
+ .hangout-card {
+   max-height: 425px;
  }
 
  .hangout-card--image {
@@ -857,6 +864,12 @@ h2 {
   word-wrap: break-word;
 }
 
+.main-footer a {
+  text-decoration-color: var(--primaryColor);
+  text-decoration-thickness: 2px;
+}
+
+
 @media (max-width: 600px) {
   .main-footer {
     overflow-x: hidden;
@@ -866,7 +879,7 @@ h2 {
 }
 
 .main-footer small {
-  font-size: .75em;
+  font-size: .85em;
 }
 
 .main-footer p {
