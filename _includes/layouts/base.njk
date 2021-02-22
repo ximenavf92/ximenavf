@@ -40,14 +40,16 @@
   
       <main id="main" {%if templateClass %} class="{{ templateClass }}"{% endif %}>
         {{ content | safe }}
-        <div style="display: flex; gap: 2em; flex-wrap: wrap; margin: 5em auto 2em;">
-          <a href="#" class="button button-primary">Test button</a>
-          <a href="#" class="button button-primary--icon">Test button</a>
-          <a href="#" class="button button-secondary">Test button</a>
-          <a href="#" class="button button-secondary--icon">Test button</a>
-          <a href="#" class="button button-reverse">Test button</a>
-          <a href="#" class="button button-reverse--icon">Test button</a>
+
+        <div style="display: inline-block; margin: 5em auto 2em;">
+          <a href="#" class="button button-primary">Test button</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" class="button button-primary--icon button-icon--discord">Test button</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" class="button button-secondary">Test button</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" class="button button-secondary--icon button-icon--twitch">Test button</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" class="button button-reverse">Test button</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" class="button button-reverse--icon">Test button</a>&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
+
       </main>
   
       <footer>
@@ -63,7 +65,7 @@
         </ul>
         <small>
           <p>&copy; {{ helpers.currentYear() }} Ximena Vila Ferral</p>
-          <p><a href="https://github.com/ximenavf92"><img src="/assets/img/github-icon-white.svg" alt="" width="10" height="10"><span class="visually-hidden">View this website's code on Github</span></a>&nbsp; Designed & coded with &hearts; by <a href="https://github.com/ximenavf92">Ximena Vf.</a> Built with <a href="https://www.11ty.dev/">Eleventy</a>. Hosted on <a href="https://netlify.com/">Netlify</a>.</p>
+          <p><a href="https://github.com/ximenavf92/ximenavf92"><img src="/assets/img/github-icon-white.svg" alt="" width="10" height="10"><span class="visually-hidden">View this website's code on Github</span></a>&nbsp; Designed & coded with &hearts; by <a href="https://github.com/ximenavf92">Ximena Vf.</a> Built with <a href="https://www.11ty.dev/">Eleventy</a>. Hosted on <a href="https://netlify.com/">Netlify</a>.</p>
         </small>
       </footer>
     </siv>

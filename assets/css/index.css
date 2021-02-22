@@ -336,7 +336,9 @@ pre {
 /* Buttons */
 .button {
   width: max-content;
+  white-space: nowrap;
   padding: .75rem 1.25rem .65rem;
+  padding: .75rem 1.25rem;
   border: solid 2px transparent;
   border-radius: var(--borderRadiusSmall);
   font-weight: 600;
@@ -399,13 +401,33 @@ pre {
 .button-secondary--icon::before,
 .button-reverse--icon::before {
   content: url(/assets/img/email-icon-plane.svg);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: auto;
   object-fit: contain;
   position: relative;
     top: .3em;
   margin-right: .75em;
 }
+
+.button-icon--discord,
+.button-icon--twitch {
+  padding: .75em 1.25em .65em;
+}
+
+.button-icon--discord::before {
+  content: url(/assets/img/discord-logo.svg);
+  position: relative;
+    top: .55em;
+  margin-right: .75em;
+}
+
+.button-icon--twitch::before {
+  content: url(/assets/img/twitch-logo.svg);
+  position: relative;
+    top: .3em;
+  margin-right: .75em;
+}
+
 
 /* Social Links */
 .social-links {
