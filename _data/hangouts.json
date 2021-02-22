@@ -2,7 +2,7 @@
     "hangouts": [
         {
             "title": "Rendezvous with Cassidoo",
-            "image": "/assets/img/cassidoo-patreon.jpg",
+            "image": "/assets/img/hangouts/cassidoo-patreon.jpg",
             "alt": "Cassidy Williams holding a mechanical keyboard",
             "description": "One of the best corners of the internet, Cassidy Williams’ Discord server. You can join by supporting her Patreon or subscribing to her Twitch. Hang out  with the most fun & sus people.",
             "buttonText": "Join Cassidy’s Discord! ",
@@ -11,7 +11,7 @@
         },
         {
             "title": "Party Corgi Discord",
-            "image": "/assets/img/party-corgi-discord.jpg",
+            "image": "/assets/img/hangouts/party-corgi-discord.jpg",
             "alt": "Illustration of a happy corgi with rainbow fur",
             "description": "A very active, inclusive, supportive community of creators & learners helping each other grow. Join, chat, collaborate, ask for help and help others in their personal and professional development.",
             "buttonText": "Join the Corgi Discord! ",
@@ -20,7 +20,7 @@
         },
         {
             "title": "HelloMayuko",
-            "image": "/assets/img/hello-mayuko.jpg",
+            "image": "/assets/img/hangouts/hello-mayuko.jpg",
             "alt": "Mayuko Inoue’s head shot",
             "description": "Mayuko Inoue’s community Discord. Come hang out for chill vibes, an awesome and supportive community, code help, poms, and coworking.",
             "buttonText": "Join Mayuko’s Discord! ",
@@ -29,7 +29,7 @@
         },
         {
             "title": "Learn With Jason",
-            "image": "/assets/img/jason-lengstorf.jpg",
+            "image": "/assets/img/hangouts/jason-lengstorf.jpg",
             "alt": "Jason's head shot",
             "description": "Learn With Jason is a 90 minute, live, hands-on learning stream with brilliant teachers from the web community every Tuesday & Thursday. Subscribe to bury Jason and his guests in BOOPS!",
             "buttonText": "Follow Jason on Twitch!",
@@ -38,7 +38,7 @@
         },
         {
             "title": "Muko’s Café",
-            "image": "/assets/img/mukos-cage.jpg",
+            "image": "/assets/img/hangouts/mukos-cafe.jpg",
             "alt": "Muko's casual head shot",
             "description": "Mayuko runs a chill coworking Twitch stream where we listen to chill music and do pomodoro timers to work, study, and code together. The chat is also pretty fun and active. ",
             "buttonText": "Follow Mayuko on Twitch! ",
@@ -47,7 +47,7 @@
         },
         {
             "title": "Cassidoo’s Stream",
-            "image": "/assets/img/cassidoo-twitch.jpg",
+            "image": "/assets/img/hangouts/cassidoo-twitch.jpg",
             "alt": "Cassidy's head shot",
             "description": "Weekly chill stream where Cassidy answers the chats’s questions about keyboards, coding, working in tech and other fun stuff. Some times there is live coding and coworking.",
             "buttonText": "Follow Cassidy on Twitch!",
