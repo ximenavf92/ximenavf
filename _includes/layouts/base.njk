@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
+
+    <!-- FB Open Ggraph -->
+    <meta property="og:title" content="{{ title or metadata.title }}" />
+    <meta property="og:url" content="https://ximenavf.com/" />
+    <meta property="og:image" content="{{ socialCard or metadata.socialCard }}" />
+    <meta property="og:site_name" content="{{ title or metadata.title }}" />
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <!-- Twitter Open Ggraph -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aigaunidos" />
+    <meta property="twitter:title" content="{{ title or metadata.title }}" />
+    <meta property="twitter:description" content="{{ description or metadata.description }}">
+    <meta property="twitter:image" content="{{ socialCard or metadata.socialCard }}" />
+
+    <!-- Link Styles, feeds, favicon -->
     <link rel="stylesheet" href="{{ '/assets/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="stylesheet" href="https://use.typekit.net/gct2mqj.css">
