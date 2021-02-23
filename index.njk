@@ -19,11 +19,12 @@ layout: layouts/home.njk
     </div>
 </section>
 
-<section class="inner-section project-section">
+<section id="design" class="inner-section project-section">
     <div class="section-header">
         <h2>Designing Stuff</h2>
         <a href="/design" class="button button-reverse">View more projects</a>
     </div>
+    <div id="showbtn" class="visually-hidden"></div>
 
         <ul class="project-grid">
             <li>
@@ -104,7 +105,7 @@ layout: layouts/home.njk
         </ul>
 </section>
 
-<section class="inner-section project-section">
+<section id="code" class="inner-section project-section">
     <div class="section-header">
         <h2>Playing with code</h2>
         <a href="/code" class="button button-reverse">View more projects</a>
@@ -190,7 +191,7 @@ layout: layouts/home.njk
 </section>
 
 <!-- TODO: Writing Sections -->
-<!-- <section class="inner-section writing-header">
+<!-- <section id="writing" class="inner-section writing-header">
     <h2>Writing</h2>
 {% set maxPosts = collections.posts.length | min(3) %}
 
@@ -202,7 +203,7 @@ layout: layouts/home.njk
 </section> -->
 
 <!-- TODO: Hangout Sections -->
-<section class="inner-section hangout-section">
+<section id="hangout" class="inner-section hangout-section">
         <h2>You can usually find me here…</h2>
         <ul class="hangout-grid">
             {% for hang in hangouts.hangouts %}
@@ -221,7 +222,7 @@ layout: layouts/home.njk
 </section>
 
 <!-- TODO: Contact Section -->
-<section class="inner-section contact-section">
+<section id="contact" class="inner-section contact-section">
   <div class="container">
     <div class="form-box">
       <h2>Let's Chat!</h2>

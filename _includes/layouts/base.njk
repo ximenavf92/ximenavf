@@ -31,25 +31,31 @@
   <body>
     <div class="wrapper">
       <a class="skip-main" href="#main">Skip to Main Content</a>
-      <header>
+      <header class="main-header">
         <nav class="main-nav">
         <h1><a href="{{ '/' | url }}"><img src="/assets/img/horizontal-logo.svg" alt="" width="200" height="65" class="logo"><span class="visually-hidden">{{ metadata.title }}</span></a></h1>
   
-        {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
           <ul class="nav">
             <li class="nav-item"><a href="/assets/files/XimenaVilaFerral-Resume-2021.pdf" target="_blank" rel="noopener">resume</a></li>
-          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item"><a href="#design">design</a></li>
+            <li class="nav-item"><a href="#code">code</a></li>
+            <li class="nav-item"><a href="#contact">contact</a></li>
+
+          <!-- {%- for entry in collections.all | eleventyNavigation %}
             <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title | lowercase }}</a></li>
-          {%- endfor %}
+          {%- endfor %} -->
           </ul>
         </nav>
         <nav class="mobile-nav">
           <ul class="nav">
             <li class="nav-item nav-item-home-icon"><a href="/"><span class="visually-hidden">home</span><img src="/assets/img/favicon.png" alt="" width="22px"></a></li>
             <li class="nav-item"><a href="/assets/files/XimenaVilaFerral-Resume-2021.pdf" target="_blank" rel="noopener">resume</a></li>
-            {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item"><a href="#design">design</a></li>
+            <li class="nav-item"><a href="#code">code</a></li>
+            <li class="nav-item"><a href="#contact">contact</a></li>
+            <!-- {%- for entry in collections.all | eleventyNavigation %}
               <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title | lowercase }}</a></li>
-            {%- endfor %}
+            {%- endfor %} -->
             </ul>
         </nav>
       </header>
@@ -59,10 +65,14 @@
         
       </main>
 
-      
       <div class="susmena">
         <img src="/assets/img/susmena.png" alt="Ximena's Among Us avatar. Green with red horns" width="80" height="132">
       </div>
+
+      <button id="backToTopBtn"> 
+        <span class="visually-hidden">Back to top</span><img src="/assets/img/arrow-caret-up.svg" alt="" width="20px" height="20px">
+      </button>
+
       <footer class="main-footer">
         <ul class="social-links">
           {% for social in metadata.socials %}
@@ -81,6 +91,7 @@
       </footer>
     </div>
 
-    <!-- Current page: {{ page.url | url }} -->
+    <!-- Scripts -->
+    <script src="/assets/js/main.js" async></script>
   </body>
 </html>
