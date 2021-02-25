@@ -1,0 +1,37 @@
+<br>
+<ul class="project-grid">{% for project in collections.designs  %}
+<li>
+<article class="project-card">
+<a href="{{ project.url }}">
+<img {% if project.data.image %}src="{{ project.data.image }}"
+{% else %}src="/assets/img/project-image-placeholder.svg"{% endif %} alt="" class="project-card--image">
+</a>
+<div class="project-card--details">
+<h3 class="project-card--heading"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+<p class="project-card--subheading">{{ project.data.skills }}</p>
+<p class="project-card--description">{{ project.data.description }}</p>
+</div>
+<footer class="project-card--footer">
+<ul class="project-card--links">
+<li>
+{% if project.data.webLink %}
+<a href="{{ project.data.webLink }}">
+<img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+height="20px"><span class="visually-hidden">Visit live project</span>
+</a>
+{% endif %}
+</li>
+<li>
+{% if project.data.githubLink %}
+<a href="{{ project.data.githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+width="20px" height="20px"><span class="visually-hidden">View project repository</span>
+</a>
+{% endif %}
+</li>
+</ul>
+<a href="{{ project.url }}" class="project-card--morebtn">Learn more</a>
+</footer>
+</article>
+</li>
+{% endfor %}
+</ul>
