@@ -3,7 +3,26 @@ layout: layouts/base.njk
 templateClass: tmpl-project
 ---
 <section class="inner-section">
-  <h1>{{ title }}</h1>
+  <div class="section-header">
+    <h1>{{ title }}</h1>
+    <ul class="project-card--links">
+      <li>
+      {% if webLink %}
+      <a href="{{ webLink }}">
+      <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+      height="20px"><span class="visually-hidden">Visit live project</span>
+      </a>
+      {% endif %}
+      </li>
+      <li>
+      {% if githubLink %}
+      <a href="{{ githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+      width="20px" height="20px"><span class="visually-hidden">View project repository</span>
+      </a>
+      {% endif %}
+      </li>
+    </ul>
+  </div>
   
   {{ content | safe }}
   

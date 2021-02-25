@@ -1,9 +1,9 @@
 ---
 title: CodePen Mini Projects
-description: Collections of small exploratory code projects and reduced test cases for real projects. 
+description: A collections of small code projects exploring various CSS and Javascript fundamental concepts.
 skills: HTML, CSS, Javascript
-# image: assets/img/projects/
-date: 2021-02-20
+image: /assets/img/projects/doingathing-codepen-thumbnail-1.jpg
+date: 2021-05-20
 tags:
   - code-projects
   - code-feat

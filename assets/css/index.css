@@ -646,10 +646,14 @@ button.button-reverse--icon {
   margin-top: -2em;
 }
 
+.social-links-item img {
+  width: 30px;
+  height: 30px;
+}
 
 .social-links-email img {
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
 }
 
 @media (max-width: 600px) {
@@ -659,8 +663,8 @@ button.button-reverse--icon {
   }
 
   .social-links-item img {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
   }
   
 }
@@ -768,10 +772,14 @@ a[href].direct-link:focus:visited,
 }
 
 .tmpl-post h1,
-.tmpl-project h1,
 .tmpl-page h1 {
   font-size: 4em;
   margin: 0 auto .5em;
+}
+
+.tmpl-project h1 {
+  font-size: 4em;
+  margin: 0 0 .5em;
 }
 
 h2 {
@@ -911,6 +919,15 @@ h2 {
   }
 }
 
+/* ==== Project Templates ==== */
+.tmpl-project .section-header {
+  margin: 0;
+}
+
+.tmpl-project .project-card--links {
+  text-align: right;
+}
+
 /* ==== Project Cards ==== */
 .project-grid {
   width: 100%;
@@ -1008,7 +1025,7 @@ h2 {
       justify-content: center;
       align-items: start;
       gap: 2.5em;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
      }
 
     .project-card {  

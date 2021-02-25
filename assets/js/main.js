@@ -6,9 +6,7 @@ let susmena = document.querySelector('.susmena');
 
 function handleScroll() {
     let scrollTotal = root.scrollHeight - root.clientHeight;
-    
-    console.log('We scrolling!');
-    if ((root.scrollTop / scrollTotal) > 0) {
+        if ((root.scrollTop / scrollTotal) > 0) {
         backToTopBtn.classList.add('show-btn');
     } else {
         backToTopBtn.classList.remove('show-btn');
@@ -19,9 +17,7 @@ function scrollToTop() {
     root.scrollTo({
         top: 0,
         behavior: "smooth"
-    })
-    console.log('Scrolling to the tooop!');
-}
+    })}
 
 
 function callback(entries, observer) {
