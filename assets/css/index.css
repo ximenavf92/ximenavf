@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: rgb(0, 164, 179);
+  --primaryColor: hsl(185, 100%, 35%);
   --secondaryColor: hsl(209, 100%, 27%);
   --secondaryColor50: hsla(209, 100%, 27%, .5);
   --accentColor: hsl(349, 99%, 65%);
@@ -21,6 +21,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+::selection {
+  color: var(--lightText);
+  background-color: var(--primaryColor);
 }
 
 /* ====== SCROLLBAR ====== */
@@ -123,6 +128,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headingFont), system-ui, serif;
+  letter-spacing: .025em;
 }
 
 p:last-child {
@@ -144,7 +150,7 @@ a[href] {
 
 :target {
   scroll-margin-top: 10rem;
-  scroll-margin-top: 3rem;
+  scroll-margin-top: 1.5rem;
 }
 
 main {
@@ -214,6 +220,17 @@ pre {
   background-color: var(--secondaryColor50);
   max-width: 100%;
   overflow: hidden;
+}
+
+pre[class*="language-"] {
+  padding: 1.5em 2em;
+  background-color: var(--secondaryColor50);
+  background-color: var(--darkText);
+  border-radius: var(--borderRadiusSmall);
+}
+
+code[class*="language-"] {
+  background-color: transparent;
 }
 
 .highlight-line {
@@ -296,49 +313,51 @@ pre {
   align-items: center;
 }
 
-.main-nav .nav-item a,
-.main-nav h1 a,
-.underline-animation {
-  position: relative;
-  margin-right: 1em;
-  text-decoration: none;
+@media (min-width: 701px) {
+  .main-nav .nav-item a,
+  .main-nav h1 a,
+  .underline-animation {
+    position: relative;
+    margin-right: 1em;
+    text-decoration: none;
+  }
+  
+  .main-nav .nav-item a::before,
+  .main-nav h1 a::before,
+  .underline-animation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accentColor);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaleX(0);
+  }
+  
+  .main-nav .nav-item a:hover,
+  .main-nav .nav-item a:focus,
+  .main-nav h1 a:hover,
+  .main-nav h1 a:focus,
+  .underline-animation:hover,
+  .underline-animation:focus {
+    color: var(--secondaryColor);
+    outline: none;
+  }
+  
+  .main-nav .nav-item a:hover::before,
+  .main-nav .nav-item a:focus::before,
+  .main-nav h1 a:hover::before,
+  .main-nav h1 a:focus::before,
+  .underline-animation:hover::before,
+  .underline-animation:focus::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
 }
-
-.main-nav .nav-item a::before,
-.main-nav h1 a::before,
-.underline-animation::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--accentColor);
-  visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
-  transform: scaleX(0);
-}
-
-.main-nav .nav-item a:hover,
-.main-nav .nav-item a:focus,
-.main-nav h1 a:hover,
-.main-nav h1 a:focus,
-.underline-animation:hover,
-.underline-animation:focus {
-  color: var(--secondaryColor);
-  outline: none;
-}
-
-.main-nav .nav-item a:hover::before,
-.main-nav .nav-item a:focus::before,
-.main-nav h1 a:hover::before,
-.main-nav h1 a:focus::before,
-.underline-animation:hover::before,
-.underline-animation:focus::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
 
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
@@ -683,6 +702,15 @@ button.button-reverse--icon {
   font-weight: 700;
 }
 
+.post-simple-navigation {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
 
 /* Tags */
 .post-tag {
@@ -739,8 +767,22 @@ a[href].direct-link:focus:visited,
   padding: 2rem 6rem;
 }
 
+.tmpl-post h1,
+.tmpl-project h1,
+.tmpl-page h1 {
+  font-size: 4em;
+  margin: 0 auto .5em;
+}
+
 h2 {
   font-size: 3.25em;
+}
+
+.tmpl-post h2,
+.tmpl-project h2,
+.tmpl-page h2 {
+  font-size: 2.5em;
+  margin: 1.25em auto .25em;
 }
 
 @media (max-width: 600px) {
@@ -753,8 +795,6 @@ h2 {
     font-size: 2.75em;
   }
 }
-
-
 
 /* Hero */
 .hero-section {
@@ -815,7 +855,7 @@ h2 {
 
 @media (min-width: 1200px) {
   .inner-section {
-    padding: 2rem 6rem;
+    padding: 2rem 8rem;
   }
   
   main .hero-section {
@@ -881,12 +921,21 @@ h2 {
 
  .project-card {
    margin-bottom: 4em;
+   /* display: grid;
+   grid-template-rows: 1fr .5fr .25fr; */
  }
 
  .project-card--image {
    max-width: 100%;
    width: 100%;
+   height: 100%;
+   max-height: 297px;
+   object-fit: cover;
    border-radius: var(--borderRadius);
+ }
+
+ .project-card--details {
+   padding: 0 1em 0;
  }
 
  .project-card--heading {
@@ -909,7 +958,8 @@ h2 {
    display: grid;
    gap: 1em;
    grid-template-columns: 2fr 1fr;
-   margin: 1em 0;
+   margin: 1.25em 0;
+   padding: 0 1em 0;
  }
 
  .project-card--links {
@@ -922,6 +972,11 @@ h2 {
    display: inline-block;
    margin-right: .5em;
  }
+
+ /* .project-card--links-icon img:hover {
+   filter: hue-rotate(185);
+   transform: rotate(-1deg);
+ } */
 
   a.project-card--morebtn {
     justify-self: center;
@@ -938,7 +993,12 @@ h2 {
       top: .2em;
   }
 
-  @media (min-width: 1200px) {
+  a.project-card--morebtn:hover::after {
+    margin-left: 1em;
+    transition: all .25s ease-in-out;
+  }
+
+  @media (min-width: 800px) {
     .project-grid {
       width: 100%;
       list-style: none;
@@ -948,7 +1008,7 @@ h2 {
       justify-content: center;
       align-items: start;
       gap: 2.5em;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
      }
 
     .project-card {  
@@ -1026,9 +1086,10 @@ h2 {
     display: grid;
     justify-content: center;
     align-content: start;
-    gap: 1em 3em;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 0 3em;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     margin-top: -1em;
+    margin: 0 4rem;
    }
 
    .hangout-card--image {
@@ -1234,16 +1295,32 @@ h2 {
       left: 0;
 
     opacity: 0;
-    transform: translate(0);
-    transition: all 1s ease;
+    transform: translate(2rem, 0);
     z-index: 0;
+    transition: all 1s ease;
   }
 
   .be-sus {
+    /* animation: 1s ease-out 2s beSus; */
+
     opacity: 1;
     transform: translate(2rem, -1.5rem);
     z-index: 20;
   }
+
+  /* @keyframes beSus {
+    from {
+      opacity: 0;
+      transform: translate(2rem, 0);
+      z-index: 0;
+    }
+
+  to {
+    opacity: 1;
+    transform: translate(2rem, -1.5rem);
+    z-index: 20;
+  }
+  } */
 }
 
 @media (min-width: 701px) {

@@ -25,83 +25,43 @@ layout: layouts/home.njk
         <a href="/design" class="button button-reverse">View more projects</a>
     </div>
     <div id="showbtn" class="visually-hidden"></div>
-
-        <ul class="project-grid">
+      <ul class="project-grid">
+        {% for project in collections.designFeat %}
             <li>
-              <article class="project-card">
-                <img src="/assets/img/project-image-placeholder.svg" alt="" class="project-card--image">
-                <h3 class="project-card--heading">Project Name</h3>
-                <p class="project-card--subheading">Design &amp; Development</p>
-                <p class="project-card--description">Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra
-                  vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.</p>
-                <footer class="project-card--footer">
-                  <ul class="project-card--links">
-                    <li>
-                      <a href="#">
-                        <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
-                          height="20px"><span class="visually-hidden">Visit live project</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
-                          width="20px" height="20px"><span class="visually-hidden">View project repository</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#" class="project-card--morebtn">Learn more</a>
-                </footer>
-              </article>
+            <article class="project-card">
+                  <a href="{{ project.url }}">
+                    <img {% if project.data.image %}src="{{ project.data.image }}"
+                    {% else %}src="/assets/img/project-image-placeholder.svg"{% endif %} alt="" class="project-card--image">
+                  </a>
+                  <div class="project-card--details">
+                  <h3 class="project-card--heading"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+                  <p class="project-card--subheading">{{ project.data.skills }}</p>
+                  <p class="project-card--description">{{ project.data.description }}</p>
+                </div>
+                  <footer class="project-card--footer">
+                    <ul class="project-card--links">
+                      <li>
+                        {% if project.data.webLink %}
+                          <a href="{{ project.data.webLink }}">
+                            <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+                              height="20px"><span class="visually-hidden">Visit live project</span>
+                          </a>
+                        {% endif %}
+                      </li>
+                      <li>
+                        {% if project.data.githubLink %}
+                          <a href="{{ project.data.githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+                            width="20px" height="20px"><span class="visually-hidden">View project repository</span>
+                          </a>
+                        {% endif %}
+                      </li>
+                    </ul>
+                    <a href="{{ project.url }}" class="project-card--morebtn">Learn more</a>
+                  </footer>
+                
+                </article>
             </li>
-            <li>
-              <article class="project-card">
-                <img src="/assets/img/project-image-placeholder.svg" alt="" class="project-card--image">
-                <h3 class="project-card--heading">Project Name</h3>
-                <p class="project-card--subheading">Design &amp; Development</p>
-                <p class="project-card--description">Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra
-                  vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.</p>
-                <footer class="project-card--footer">
-                  <ul class="project-card--links">
-                    <li>
-                      <a href="#">
-                        <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
-                          height="20px"><span class="visually-hidden">Visit live project</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
-                          width="20px" height="20px"><span class="visually-hidden">View project repository</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#" class="project-card--morebtn">Learn more</a>
-                </footer>
-              </article>
-            </li>
-            <li>
-              <article class="project-card">
-                <img src="/assets/img/project-image-placeholder.svg" alt="" class="project-card--image">
-                <h3 class="project-card--heading">Project Name</h3>
-                <p class="project-card--subheading">Design &amp; Development</p>
-                <p class="project-card--description">Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra
-                  vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.</p>
-                <footer class="project-card--footer">
-                  <ul class="project-card--links">
-                    <li>
-                      <a href="#">
-                        <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
-                          height="20px"><span class="visually-hidden">Visit live project</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
-                          width="20px" height="20px"><span class="visually-hidden">View project repository</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#" class="project-card--morebtn">Learn more</a>
-                </footer>
-              </article>
-        </li>
+          {% endfor %}
         </ul>
 </section>
 
@@ -112,81 +72,42 @@ layout: layouts/home.njk
     </div>
 
         <ul class="project-grid">
-            <li>
-              <article class="project-card">
-                <img src="/assets/img/project-image-placeholder.svg" alt="" class="project-card--image">
-                <h3 class="project-card--heading">Project Name</h3>
-                <p class="project-card--subheading">Design &amp; Development</p>
-                <p class="project-card--description">Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra
-                  vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.</p>
+          {% for project in collections.codeFeat  %}
+          <li>
+          <article class="project-card">
+                <a href="{{ project.url }}">
+                  <img {% if project.data.image %}src="{{ project.data.image }}"
+                  {% else %}src="/assets/img/project-image-placeholder.svg"{% endif %} alt="" class="project-card--image">
+                </a>
+                <div class="project-card--details">
+                <h3 class="project-card--heading"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+                <p class="project-card--subheading">{{ project.data.skills }}</p>
+                <p class="project-card--description">{{ project.data.description }}</p>
+              </div>
                 <footer class="project-card--footer">
                   <ul class="project-card--links">
                     <li>
-                      <a href="#">
-                        <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
-                          height="20px"><span class="visually-hidden">Visit live project</span>
-                      </a>
+                      {% if project.data.webLink %}
+                        <a href="{{ project.data.webLink }}">
+                          <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+                            height="20px"><span class="visually-hidden">Visit live project</span>
+                        </a>
+                      {% endif %}
                     </li>
                     <li>
-                      <a href="#"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+                      {% if project.data.githubLink %}
+                        <a href="{{ project.data.githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
                           width="20px" height="20px"><span class="visually-hidden">View project repository</span>
-                      </a>
+                        </a>
+                      {% endif %}
                     </li>
                   </ul>
-                  <a href="#" class="project-card--morebtn">Learn more</a>
+                  <a href="{{ project.url }}" class="project-card--morebtn">Learn more</a>
                 </footer>
+              
               </article>
-            </li>
-            <li>
-              <article class="project-card">
-                <img src="/assets/img/project-image-placeholder.svg" alt="" class="project-card--image">
-                <h3 class="project-card--heading">Project Name</h3>
-                <p class="project-card--subheading">Design &amp; Development</p>
-                <p class="project-card--description">Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra
-                  vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.</p>
-                <footer class="project-card--footer">
-                  <ul class="project-card--links">
-                    <li>
-                      <a href="#">
-                        <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
-                          height="20px"><span class="visually-hidden">Visit live project</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
-                          width="20px" height="20px"><span class="visually-hidden">View project repository</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#" class="project-card--morebtn">Learn more</a>
-                </footer>
-              </article>
-            </li>
-            <li>
-              <article class="project-card">
-                <img src="/assets/img/project-image-placeholder.svg" alt="" class="project-card--image">
-                <h3 class="project-card--heading">Project Name</h3>
-                <p class="project-card--subheading">Design &amp; Development</p>
-                <p class="project-card--description">Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra
-                  vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.</p>
-                <footer class="project-card--footer">
-                  <ul class="project-card--links">
-                    <li>
-                      <a href="#">
-                        <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
-                          height="20px"><span class="visually-hidden">Visit live project</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
-                          width="20px" height="20px"><span class="visually-hidden">View project repository</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#" class="project-card--morebtn">Learn more</a>
-                </footer>
-              </article>
-        </li>
+          </li>
+        {% endfor %}
         </ul>
 </section>
 
