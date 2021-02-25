@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
+  //CUSTOM FILTERS
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
@@ -45,6 +46,25 @@ module.exports = function(eleventyConfig) {
     return string.toLowerCase();
   });  
 
+
+  // CUSTOM COLLECTIONS
+  // Get only content that matches a tag  
+  eleventyConfig.addCollection("designFeat", function(collectionApi) {
+    return collectionApi.getFilteredByTag("design-feat");
+  });
+  
+  eleventyConfig.addCollection("codeFeat", function(collectionApi) {
+    return collectionApi.getFilteredByTag("code-feat");
+  });
+  
+  eleventyConfig.addCollection("designs", function(collectionApi) {
+    return collectionApi.getFilteredByTag("design-projects");
+  });
+  
+  eleventyConfig.addCollection("codes", function(collectionApi) {
+    return collectionApi.getFilteredByTag("code-projects");
+  });
+
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function(item) {
@@ -58,6 +78,10 @@ module.exports = function(eleventyConfig) {
             case "nav":
             case "post":
             case "posts":
+            case "design-projects":
+            case "code-projects":
+            case "design-feat":
+            case "code-feat":
               return false;
           }
 
