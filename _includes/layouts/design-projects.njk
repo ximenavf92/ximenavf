@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-project
+---
+<section class="inner-section">
+  <div class="section-header">
+    <h1>{{ title }}</h1>
+    <ul class="project-card--links">
+      <li>
+      {% if webLink %}
+      <a href="{{ webLink }}">
+      <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+      height="20px"><span class="visually-hidden">Visit live project</span>
+      </a>
+      {% endif %}
+      </li>
+      <li>
+      {% if githubLink %}
+      <a href="{{ githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+      width="20px" height="20px"><span class="visually-hidden">View project repository</span>
+      </a>
+      {% endif %}
+      </li>
+    </ul>
+  </div>
+  
+  {{ content | safe }}
+  
+  {# <hr style="margin-top: 4em;"> #}
+  <ul class="post-simple-navigation">
+    {%- set nextPost = collections.designs | getNextCollectionItem(page) %}
+    {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+    {%- set previousPost = collections.designs | getPreviousCollectionItem(page) %}
+    {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+  </ul>
+</section>

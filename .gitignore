@@ -12,5 +12,8 @@ _site/
 # Local Netlify folder
 .netlify
 
+# Github folder
+.github
+
 # Local VScode Settings
 .vscode

@@ -1,0 +1,53 @@
+{
+  "title": "Ximena Vila Ferral – Designer & Developer",
+  "url": "https://ximenavf.com/",
+  "description": "Ximena Vila Ferral's personal site. Mexican born, Texas based designer and developer playing with design and code. Passionate in all things web and advocate of uniting the design and developer communities to work together and learn from each other.",
+  "socialCard": "https://deploy-preview-1--ximenavf.netlify.app/assets/img/social-previewe-card-2.jpg",
+  "feed": {
+    "subtitle": "Design & Code",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://ximenavf.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://ximenavf.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Ximena Vila Ferral",
+    "email": "hola@ximenavf.com",
+    "url": "https://ximenavf.com/about-me/"
+  },
+  "socials": [
+    {
+        "name": "twitter",
+        "icon": "/assets/img/twitter-icon-white.svg",
+        "alt": "follow Ximena on twitter",
+        "link": "https://twitter.com/ximenavf92"
+    },
+    {
+        "name": "linkedin",
+        "icon": "/assets/img/linkedin-icon-white.svg",
+        "alt": "follow Ximena on Linked In",
+        "link": "https://www.linkedin.com/in/ximenavilaf/"
+    },
+    {
+        "name": "instagram",
+        "icon": "/assets/img/instagram-icon-white.svg",
+        "alt": "follow Ximena on instagram",
+        "link": "https://www.instagram.com/ximenavf92/"
+    },
+    {
+        "name": "github",
+        "icon": "/assets/img/github-icon-white.svg",
+        "alt": "follow Ximena on github",
+        "link": "https://github.com/ximenavf92"
+    },
+    {
+        "name": "email",
+        "icon": "/assets/img/email-icon-plane.svg",
+        "alt": "send Ximena an email",
+        "link": "mailto:hola@ximenavf.com"
+    }
+  ]
+}

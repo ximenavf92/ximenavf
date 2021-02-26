@@ -1,0 +1,170 @@
+---
+layout: layouts/home.njk
+# eleventyNavigation:
+#  key: Home
+#  order: 1
+---
+
+<section class="inner-section hero-section">
+    <div class="container">
+        <h2><span class="symbol-align">¡</span>Hola!</h2>
+        <p><span class="name-highlight">Ximena</span> <em class="pronunciation">(He-Men-Ah)</em> here, a Mexican born, Texas based designer and developer. A curious and eager self-motivated learner who loves to find and try new things, focusing on designing and developing inclusive and accessible user interfaces and experiences. Passionate in all things web and advocate of uniting the design and developer communities to work together and learn from each other.</p>
+        <ul class="button-list">
+            <li><a href="/assets/files/XimenaVilaFerral-Resume-2021.pdf" class="button button-reverse" target="_blank" rel="noopener">My resume</a></li>
+            <li><a href="mailto:hola@ximenavf.com" class="button button-primary--icon">Send me a message</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="/assets/img/header-illustration-computers-and-avatar.svg" alt="Illustration of books, computers showing code and design tools and Ximena's avatar" class="hero-illustration" width="685">
+    </div>
+</section>
+
+<section id="design" class="inner-section project-section">
+    <div class="section-header">
+        <h2>Designing Stuff</h2>
+        <a href="/design" class="button button-reverse">View more projects</a>
+    </div>
+    <div id="showbtn" class="visually-hidden"></div>
+      <ul class="project-grid">
+        {% for project in collections.designFeat %}
+            <li>
+            <article class="project-card">
+                  <a href="{{ project.url }}">
+                    <img {% if project.data.image %}src="{{ project.data.image }}"
+                    {% else %}src="/assets/img/project-image-placeholder.svg"{% endif %} alt="" class="project-card--image">
+                  </a>
+                  <div class="project-card--details">
+                  <h3 class="project-card--heading"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+                  <p class="project-card--subheading">{{ project.data.skills }}</p>
+                  <p class="project-card--description">{{ project.data.description }}</p>
+                </div>
+                  <footer class="project-card--footer">
+                    <ul class="project-card--links">
+                      <li>
+                        {% if project.data.webLink %}
+                          <a href="{{ project.data.webLink }}">
+                            <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+                              height="20px"><span class="visually-hidden">Visit live project</span>
+                          </a>
+                        {% endif %}
+                      </li>
+                      <li>
+                        {% if project.data.githubLink %}
+                          <a href="{{ project.data.githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+                            width="20px" height="20px"><span class="visually-hidden">View project repository</span>
+                          </a>
+                        {% endif %}
+                      </li>
+                    </ul>
+                    <a href="{{ project.url }}" class="project-card--morebtn">Learn more</a>
+                  </footer>
+                
+                </article>
+            </li>
+          {% endfor %}
+        </ul>
+</section>
+
+<section id="code" class="inner-section project-section">
+    <div class="section-header">
+        <h2>Playing with code</h2>
+        <a href="/code" class="button button-reverse">View more projects</a>
+    </div>
+
+        <ul class="project-grid">
+          {% for project in collections.codeFeat  %}
+          <li>
+          <article class="project-card">
+                <a href="{{ project.url }}">
+                  <img {% if project.data.image %}src="{{ project.data.image }}"
+                  {% else %}src="/assets/img/project-image-placeholder.svg"{% endif %} alt="" class="project-card--image">
+                </a>
+                <div class="project-card--details">
+                <h3 class="project-card--heading"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+                <p class="project-card--subheading">{{ project.data.skills }}</p>
+                <p class="project-card--description">{{ project.data.description }}</p>
+              </div>
+                <footer class="project-card--footer">
+                  <ul class="project-card--links">
+                    <li>
+                      {% if project.data.webLink %}
+                        <a href="{{ project.data.webLink }}">
+                          <img src="/assets/img/link-icon-white.svg" alt="" class="project-card--links-icon" width="20px"
+                            height="20px"><span class="visually-hidden">Visit live project</span>
+                        </a>
+                      {% endif %}
+                    </li>
+                    <li>
+                      {% if project.data.githubLink %}
+                        <a href="{{ project.data.githubLink }}"><img src="/assets/img/github-icon-white.svg" alt="" class="project-card--links-icon"
+                          width="20px" height="20px"><span class="visually-hidden">View project repository</span>
+                        </a>
+                      {% endif %}
+                    </li>
+                  </ul>
+                  <a href="{{ project.url }}" class="project-card--morebtn">Learn more</a>
+                </footer>
+              
+              </article>
+          </li>
+        {% endfor %}
+        </ul>
+</section>
+
+<!-- TODO: Writing Sections -->
+<!-- <section id="writing" class="inner-section writing-header">
+    <h2>Writing</h2>
+{% set maxPosts = collections.posts.length | min(3) %}
+
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
+<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+</section> -->
+
+<!-- TODO: Hangout Sections -->
+<section id="hangout" class="inner-section hangout-section">
+        <h2>You can usually find me here…</h2>
+        <ul class="hangout-grid">
+            {% for hang in hangouts.hangouts %}
+            <li>
+                <article class="hangout-card">
+                    <img src="{{ hang.image }}" alt="{{ hang.alt }}" class="hangout-card--image" width="150" height="150">
+                    <div class="hangout-card--details">
+                        <h3 class="hangout-card--title">{{ hang.title }}</h3>
+                        <p class="hangout-card--description">{{ hang.description }}</p>
+                    </div>
+                    <a href="{{ hang.link }}" class="button button-secondary--icon {{ hang.buttonClass }}">{{ hang.buttonText }}</a>
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+</section>
+
+<!-- TODO: Contact Section -->
+<section id="contact" class="inner-section contact-section">
+  <div class="container">
+    <div class="form-box">
+      <h2>Let's Chat!</h2>
+      <p>Send me an email at <a href="mailto:hola@ximenavf.com">hola@ximenavf.com</a> or leave me a message below</p>
+      <form class="contact-form" name="contact" method="POST" netlify >
+        <!-- <div class="form-2-col-fields"> -->
+          <label for="name" class="form-field--name">Name
+            <input id="name" type="text">
+         </label>
+          
+          <label for="email" class="form-field--email">Email
+            <input id="email" type="email">
+          </label>
+        <!-- </div> -->
+
+        <label for="message" class="form-field--message">Message
+          <textarea id="message"></textarea>
+        </label>
+
+        <button type="submit" class="button button-primary--icon">Send Message</button></form>
+    </div>
+  </div>
+  <div class="container"><img src="/assets/img/contact-laptop-illustration.svg" alt="" class="contact-section--illustration"></div>
+</section>
