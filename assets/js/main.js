@@ -1,5 +1,5 @@
 // Back to Top Button
-let backToTopBtn = document.getElementById('backToTopBtn');
+let backToTopBtn = document.getElementById('backToTop');
 let root = document.documentElement;
 let target = document.querySelector('.main-footer');
 let susmena = document.querySelector('.susmena');

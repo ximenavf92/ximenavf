@@ -148,20 +148,23 @@ layout: layouts/home.njk
     <div class="form-box">
       <h2>Let's Chat!</h2>
       <p>Send me an email at <a href="mailto:hola@ximenavf.com">hola@ximenavf.com</a> or leave me a message below</p>
-      <form class="contact-form" name="contact" method="POST" netlify >
-        <!-- <div class="form-2-col-fields"> -->
+      <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
+        <!-- HoneyPot Field — Reduce spam -->
+          <label id="honeypot">Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        <!-- Form Fields -->
           <label for="name" class="form-field--name">Name
-            <input id="name" type="text">
+            <input id="name" name="name" type="text">
          </label>
           
           <label for="email" class="form-field--email">Email
-            <input id="email" type="email">
+            <input id="email" name="email" type="email">
           </label>
-        <!-- </div> -->
 
         <label for="message" class="form-field--message">Message
-          <textarea id="message"></textarea>
+          <textarea id="message" name="message" ></textarea>
         </label>
+
+        <div data-netlify-recaptcha="true" id="captcha" class="form-field--captcha"></div>
 
         <button type="submit" class="button button-primary--icon">Send Message</button></form>
     </div>
