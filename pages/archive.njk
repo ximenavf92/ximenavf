@@ -1,12 +1,18 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base.njk
+templateClass: tmpl-blog
 permalink: /writing/
 eleventyNavigation:
   key: writing
   order: 3
 ---
 
-<h1>Writing things…</h1>
+<section class="inner-section">
+  <h1>Writing about things…</h1>
 
 {% set postslist = collections.posts %}
+{% set filters = ' reverse | head(2)' %}
 {% include "postslist.njk" %}
+</section>
+
+
