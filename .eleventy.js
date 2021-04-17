@@ -25,6 +25,7 @@ module.exports = function(eleventyConfig) {
   });
 
   //CUSTOM FILTERS
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
@@ -38,10 +39,18 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
+  // Does it include a particular tag
+  // USAGE:{% if tags | hasTag('post') %}
+  eleventyConfig.addFilter("hasTag", (tags, tag) => {
+    return tags.includes(tag);
+  });
+
+  // Convert string to uppercase
   eleventyConfig.addFilter( "uppercase", (string) => {
     return string.toUpperCase();
   });  
-
+  
+  // Convert string to lowercase
   eleventyConfig.addFilter( "lowercase", (string) => {
     return string.toLowerCase();
   });  
