@@ -33,4 +33,6 @@ templateClass: tmpl-project
     {%- set previousPost = collections.designs | getPreviousCollectionItem(page) %}
     {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
   </ul>
+  <br>
+  <a href="/design/" class="button button-secondary">Back to design projects</a>
 </section>
