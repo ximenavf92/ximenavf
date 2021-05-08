@@ -20,6 +20,15 @@ layout: layouts/home.njk
     </div>
 </section>
 
+<section id="writing" class="fullwidth-section writing-section">
+    <div class="section-header">
+        <h2>Writing about things</h2>
+    </div>
+      {% set postslist = collections.posts %}
+      {% include "postslist.njk" %}
+      <a href="/writing" class="button button-primary button-icon--rightarrow">View other posts</a>
+</section>
+
 <section id="design" class="inner-section project-section">
     <div class="section-header">
         <h2>Designing Stuff</h2>
@@ -112,19 +121,6 @@ layout: layouts/home.njk
         </ul>
 </section>
 
-<!-- TODO: Writing Sections -->
-<!-- <section id="writing" class="inner-section writing-header">
-    <h2>Writing</h2>
-{% set maxPosts = collections.posts.length | min(3) %}
-
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-</section> -->
-
-<!-- TODO: Hangout Sections -->
 <section id="hangout" class="inner-section hangout-section">
         <h2>You can usually find me here…</h2>
         <ul class="hangout-grid">
