@@ -786,7 +786,7 @@ button.button-reverse--icon {
 .postlist-excerpt {
   margin-top: .25em;
   margin-left: .25em;
-  height: 6em;
+  height: 5.75em;
   overflow: hidden;
   display: flex;
 }
@@ -1295,6 +1295,13 @@ width: 100%;
 background-color: var(--secondaryColor50);
 padding-bottom: 7rem;
 padding-top: 6rem;
+}
+
+@media (max-width: 600px) {
+  .writing-section.writing-section {
+      padding: 5rem 3rem 6rem 2rem;
+      margin-left: -.25em;
+    }
 }
 
 .writing-section .section-header {
