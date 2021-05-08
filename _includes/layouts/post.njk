@@ -6,6 +6,7 @@ templateClass: tmpl-post
   <h1>{{ title }}</h1>
   
   {{ content | safe }}
+
   
   {# <hr style="margin-top: 4em;"> #}
   <ul class="post-simple-navigation">
@@ -14,4 +15,9 @@ templateClass: tmpl-post
     {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
     {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
   </ul>
+  <p class="top-clear">
+  <a href="/writing" class="button button-reverse">Back to all posts</a>
+</p>
+  
+
 </section>
