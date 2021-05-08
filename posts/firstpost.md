@@ -1,9 +1,11 @@
 ---
 title: This is my first post.
 description: This is a post on My Blog about agile frameworks.
+excerpt: Id mi vestibulum neque suspendisse at sagittis. Nunc risus viverra vitae, id. Magna dignissim sed tempor volutpat consectetur id suspend.
 date: 2018-05-01
 tags:
-  - another-tag
+  - another
+  - second
 layout: layouts/post.njk
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
