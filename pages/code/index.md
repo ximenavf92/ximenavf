@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Playing with code
+title: Playing with code 👩‍💻
 permalink: /code/
 projectGrid: codes
 templateEngineOverride: njk,md
