@@ -37,13 +37,13 @@
             "link": "https://www.twitch.tv/jlengstorf"
         },
         {
-            "title": "Muko’s Café",
-            "image": "/assets/img/hangouts/mukos-cafe.jpg",
-            "alt": "Muko's casual head shot",
-            "description": "Mayuko runs a chill coworking Twitch stream where we listen to chill music and do pomodoro timers to work, study, and code together. The chat is also pretty fun and active. ",
-            "buttonText": "Follow Mayuko on Twitch! ",
+            "title": "Build with Ben & Obsidian Office Hours",
+            "image": "/assets/img/hangouts/bencodezen.jpg",
+            "alt": "Ben's head shot",
+            "description": "Ben Hong streams every Tuesday where he builds some fun stuff with code and onn Thursday where he shares his Obsidian and note taking knowledge.",
+            "buttonText": "Follow Ben on Twitch! ",
             "buttonClass": "button-icon--twitch",
-            "link": "https://www.twitch.tv/hellomayuko"
+            "link": "https://www.twitch.tv/bencodezen"
         },
         {
             "title": "Cassidoo’s Stream",
