@@ -7,6 +7,7 @@
   --darkText: hsl(215, 100%, 4%);
   --lightAccent: hsl(0, 0%, 73%);
   --backgroundColor: hsl(214, 100%, 14%);
+  --backgroundColor: hsl(214, 100%, 10%);
   --headingFont: p22-mackinac-pro, serif;
   --bodyFont: poppins, sans-serif;
   --headingWeight: 800;
@@ -105,7 +106,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--bodyFont), system-ui, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--lightText);
   background-color: var(--backgroundColor);
   font-style: normal;
@@ -142,8 +143,28 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--headingFont), system-ui, serif;
+  font-family: var(--headingFont), serif, system-ui, serif;
   letter-spacing: .025em;
+  line-height: 1.35;
+  margin-bottom: .5em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem; /* 48.832px */
+}
+
+h2 {font-size: 2.441rem;} /* 39.056px */
+
+h3 {font-size: 1.953rem;} /* 31.248px */ 
+
+h4 {font-size: 1.563rem;} /* 25.008px */ 
+
+h5 {font-size: 1.25rem;} /* 20px */ 
+
+small, 
+.text_small {
+  font-size: 0.8rem; /* 12.8px */ 
 }
 
 p:last-child {
@@ -153,6 +174,11 @@ p:last-child {
 p,
 .tmpl-post li {
   line-height: 1.8;
+}
+
+hr {
+  margin-top: 0;
+  border:2px solid var(--secondaryColor50);
 }
 
 img {
@@ -430,6 +456,11 @@ p code {
 
 .main-nav .nav {
   display: block;
+}
+
+.main-nav h1 {
+  margin-top: unset;
+  font-size: 1rem; 
 }
 
 .mobile-nav {
@@ -1059,8 +1090,12 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+  .tmpl-post .inner-section {
+    padding: 1rem 12rem;
+  }
+
   .inner-section {
-    padding: 2rem 8rem;
+    padding: 1rem 8rem;
   }
   
   main .hero-section {
@@ -1684,8 +1719,38 @@ padding-top: 6rem;
   }
 }
 
+
+/* USES Page */
+.uses ul {
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+.uses ul li {
+margin-bottom: .5em;
+}
+
+.uses strong {
+  font-weight: 700;
+  /* color: var(--lightAccent); */
+  /* text-transform: uppercase; */
+  letter-spacing: .05em;
+}
+
+.uses h4 {
+  color: var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+.uses a {
+  color: var(--lightText);
+  text-decoration-color: var(--primaryColor);
+  text-decoration-thickness: 2px;
+}
+
 /* Prevent FOUC */
 html {
   visibility: visible;
   opacity: 1;
 }
+
