@@ -14,7 +14,7 @@ As a designer, developer and tech nerd I love all the gadgets and apps that will
 ✨ This page is inspired from [Wes Bos'](https://wesbos.com/uses) and [Brad Garropy's](https://bradgarropy.com/uses/) Uses pages.
 
 ## 🏠 Home Office
-The year 2020 moved me and many of us, into a work from home setup from one day to the next. I had never really been a fan of working from home, which let's be clear, is different than being remote. So, to make things work, I had to step it up and get a few more things to create a "fun" and productive space for me to work and eventually game in. Even though I still miss working at ann office or IRL coworking space, I do love the way it's coming together, and am very comfrotable and happy with my little corner.
+The year 2020 moved me and many of us, into a work from home setup from one day to the next. I had never really been a fan of working from home, which let's be clear, is different than being remote. So, to make things work, I had to step it up and get a few more things to create a "fun" and productive space for me to work and game in. Even though I still miss working at an office or IRL coworking space, I do love the way it's coming together, and am very comfortable and happy with my little corner.
 
 ![Desk setup picture](/assets/img/new-office-space-2021-0712.jpg)
 

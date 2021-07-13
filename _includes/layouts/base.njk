@@ -39,12 +39,12 @@
           <ul class="nav">
             <!-- <li class="nav-item"><a {% if currentUrl === '/design/' %}aria-current="page"{% endif %} href="/design/">design</a></li>
               <li class="nav-item"><a {% if currentUrl === '/code/' %}aria-current="page"{% endif %} href="/code/">code</a></li> -->
+              <li class="nav-item"><a href="https://doingthings.ximenavf.com/">about</a></li>
               {%- for entry in collections.all | eleventyNavigation %}
               <li class="nav-item"><a {% if entry.url === currentUrl %} aria-current="page" {% endif %} href="{{ entry.url | url }}">{{ entry.title | lowercase }}</a></li>
               {%- endfor %}
               
               <li class="nav-item"><a {% if entry.url === currentUrl %}aria-current="page"{% endif %} href="/#contact">contact</a></li>
-              <li class="nav-item"><a href="https://doingthings.ximenavf.com/">about</a></li>
               <li class="nav-item"><a href="/assets/files/XimenaVilaFerral-Resume-2021.pdf" target="_blank" rel="noopener">resume</a></li>
             </ul>
         </nav>
