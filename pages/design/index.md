@@ -1,9 +1,9 @@
 ---
 layout: layouts/page.njk
-title: Designing things
+title: Designing things… 🎨
 permalink: /design/
 projectGrid: designs
-templateEngineOverride: njk, md
+templateEngineOverride: njk,md
 eleventyNavigation:
   key: design
   order: 1
