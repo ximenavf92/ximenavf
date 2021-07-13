@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Uses 💿
+permalink: /uses/
 templateClass: tmpl-post
 templateEngineOverride: njk,md
 eleventyNavigation:
