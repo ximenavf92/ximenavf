@@ -234,7 +234,18 @@ textarea {
   vertical-align: top;
 }
 
+blockquote {
+  border-left: solid 4px var(--primaryColor);
+  padding: 1.25rem 2rem;
+  background-color: var(--secondaryColor50);
+  border-radius: var(--borderRadiusSmall);
+  font-style: italic;
+  margin: 2rem 0 2rem .5rem;
+}
 
+blockquote p {
+  margin: 0;
+}
 
 /* header {
   border-bottom: 1px dashed var(--lightAccent);
@@ -992,7 +1003,8 @@ a[href].direct-link:focus:visited,
   margin: 0 auto 1em;
 }
 
-.tmpl-project h1 {
+.tmpl-project h1,
+.tmpl-post h1 {
   font-size: 4em;
   margin: 0 0 .5em;
 }
@@ -1091,7 +1103,7 @@ h2 {
 
 @media (min-width: 1200px) {
   .tmpl-post .inner-section {
-    padding: 1rem 12rem;
+    padding: 1rem 25rem;
   }
 
   .inner-section {

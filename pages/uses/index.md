@@ -26,7 +26,7 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 
 #### 💻 Computers + Monitors
 - **Mac**: MacBook Pro 2016 (15") , Catalina
-- **PC**: Lenovo Legion 7 (15"), Windows 10 – *(Thanks to the amazing RWC community)* 😊
+- **PC**: Lenovo Legion 7 (15"), Windows 10 – *(Thanks to the amazing [RWC](https://patreon.com/cassidoo) community)* 😊
 - **Work Mac**: MacBook Pro (16-inch, 2019), Big Sur
     - 2.3 GHz 8-Core Intel Core i9, 32 GB memory
 - iPad Mini – *(with Alfred remote)*
@@ -39,8 +39,9 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 - **Mic**: [Maono AU-PM422](https://www.amazon.com/Microphone-Monitoring-MAONO-Professional-Podcasting/dp/B07Z4RHL2G/ref=pd_lpo_147_t_0/144-1367196-2369240?_encoding=UTF8&pd_rd_i=B07Z4RHL2G&pd_rd_r=7e8bfba3-1a36-437c-a056-72116f044628&pd_rd_w=47bWK&pd_rd_wg=bcIZg&pf_rd_p=fb1e266d-b690-4b4f-b71c-bd35e5395976&pf_rd_r=8RG6DS8DREAM0AHBDG0H&psc=1&refRID=8RG6DS8DREAM0AHBDG0H)
 - **Keebs**:
     - *[Main](https://twitter.com/ximenavf92/status/1387224610077388800?s=20)*: [Cannnon Keys Savage65](https://cannonkeys.com/products/savage65), Holy Trash Pandas *(built and lubed by yours truly with [Okra](https://twitter.com/stephenmhouston)'s help)*, [Drop + MiTo GMK Laser Custom Keycap](https://drop.com/buy/drop-mito-gmk-laser-custom-keycap-set) Set *(Beautiful Sound)*
-    - *Backup*: Lustro , 60%, Gatreon Blues with [Cassidoo](https://twitter.com/cassidoo)'s and [SailorHG](https://twitter.com/sailorhg)'s's [AstroloKeys](https://drop.com/buy/drop-dsa-astrolokeys-keycaps-by-sailorhg-and-cassidoo).
-    - *Numpad*: [MagicForce](https://drop.com/buy/magicforce-21-key-mechanical-numpad-v2) with [AstroloKeys](https://drop.com/buy/drop-dsa-astrolokeys-keycaps-by-sailorhg-and-cassidoo)
+    - *Office*: [Keychron K6 Wireless Mechanical Keyboard](https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard?variant=31441088315481), 65% with Unholy Trash Pandas *(built and lubed by yours truly)*, [Drop + Oblotzky SA Oblivion V2 Custom Keycap Set with Git Modifiers](https://drop.com/buy/drop-oblotzky-sa-oblivion-v2?utm_source=linkshare&referer=UUH8LG)
+    - *Backup*: Lustro, 60%, Gatreon Blues with [Cassidoo](https://twitter.com/cassidoo)'s and [SailorHG](https://twitter.com/sailorhg)'s's [AstroloKeys](https://drop.com/buy/drop-dsa-astrolokeys-keycaps-by-sailorhg-and-cassidoo).
+    - *Numpad*: [MagicForce](https://drop.com/buy/magicforce-21-key-mechanical-numpad-v2) with [AstroloKeys](https://drop.com/buy/drop-dsa-astrolokeys-keycaps-by-sailorhg-and-cassidoo) or [Drop + MiTo GMK Laser Custom Keycap](https://drop.com/buy/drop-mito-gmk-laser-custom-keycap-set)
     - *Wrist rest*: [Orcas Wooden Wrist Rest](https://drop.com/buy/orcas-wooden-wrist-rests)
 - **Mouse**: [Logtiech MX Master 3](https://www.logitech.com/en-us/products/mice/mx-master-3.910-005620.html)
     - *Mousepad*: Kvlly's Git Cheat Sheet Mousepad
@@ -69,9 +70,12 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 - [iTerm](https://iterm2.com/)
     - *Theme:* [Dracula](https://draculatheme.com/)
     - *Font:* [Dank Mono](https://philpl.gumroad.com/l/dank-mono)
+    - *Autocomplete:* [Fig.io](https://fig.io/)
 - Zshell
     - [OhMyZsh](https://ohmyz.sh/)
     - [Starship.rs](http://Starship.rs)
+- Supporting Open Source by using the terminal
+  - [Flossbank](https://flossbank.com/)
 
 #### 🌐 The Internets & Other Dev Apps
 - Browsers
@@ -146,6 +150,7 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 - **Mac Apps:**
     - [Hand Mirror](https://handmirror.app/) *menu bar app to check your face before jumping on a call*
     - [Rocket Emoji](https://matthewpalmer.net/rocket/) *Discord/Slack emojis anywhere on your mac*
+    - [Bartgender 4](https://www.macbartender.com/)
 
 
 ### 📱 Other

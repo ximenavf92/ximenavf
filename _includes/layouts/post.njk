@@ -4,11 +4,12 @@ templateClass: tmpl-post
 ---
 <section class="inner-section">
   <h1>{{ title }}</h1>
+
+    <hr style="margin: 0 0 3em;">
   
   {{ content | safe }}
 
-  
-  {# <hr style="margin-top: 4em;"> #}
+  <hr style="margin-top: 4em;">
   <ul class="post-simple-navigation">
     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
     {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
