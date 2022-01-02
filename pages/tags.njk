@@ -21,7 +21,7 @@ templateClass: tmpl-tag
 ---
 
 <section class="inner-section">
-<h1>Topic: #<span class="capitalize">{{ tag }}</span></h1>
+<h1>#<span class="capitalize">{{ tag }}</span></h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}

@@ -8,6 +8,7 @@
   --lightAccent: hsl(0, 0%, 73%);
   --backgroundColor: hsl(214, 100%, 14%);
   --backgroundColor: hsl(214, 100%, 10%);
+  --backgroundColor: hsl(214, 100%, 8%);
   --headingFont: p22-mackinac-pro, serif;
   --bodyFont: poppins, sans-serif;
   --headingWeight: 800;
@@ -145,7 +146,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headingFont), serif, system-ui, serif;
   letter-spacing: .025em;
-  line-height: 1.35;
+  line-height: 1.25;
   margin-bottom: .5em;
 }
 
@@ -405,7 +406,7 @@ p code {
   .main-nav h1 a,
   .underline-animation {
     position: relative;
-    margin-right: 1em;
+    margin-right: 1.5em;
     text-decoration: none;
   }
   
@@ -546,7 +547,7 @@ p code {
     margin: 0 auto;
     height: auto;
     background-color: var(--lightText);
-    padding: .15rem 1rem;
+    padding: .15rem .5rem;
     text-align: center;
     border-radius: var(--borderRadius) var(--borderRadius) 0 0;
     position: fixed;
@@ -561,7 +562,7 @@ p code {
   } */
 
   .mobile-nav .nav-item {
-    margin: 0 .45rem;
+    margin: 0 .25rem;
   }
 
   .mobile-nav .nav-item a,
@@ -795,9 +796,24 @@ button.button-reverse--icon {
   gap: 5rem;
 }
 
+.tmpl-blog .writing-section {
+  border-radius: var(--borderRadius);
+  background-color: transparent;
+  padding: 0 .5rem;
+}
+
 @media (min-width: 1200px) {
   .postlist {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tmpl-blog .writing-section {
+    padding: 3rem 0;
+    /* border-radius: var(--borderRadius); */
+  }
+
+  .tmpl-blog .postlist { 
+    gap: 5rem;
   }
 }
 
@@ -830,8 +846,8 @@ button.button-reverse--icon {
 .postlist-excerpt {
   margin-top: .25em;
   margin-left: .25em;
-  height: 5.75em;
-  overflow: hidden;
+  /* height: 5.75em; */
+  /* overflow: hidden; */
   display: flex;
 }
 
@@ -999,13 +1015,14 @@ a[href].direct-link:focus:visited,
 .tmpl-post h1,
 .tmpl-blog h1,
 .tmpl-page h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0 auto 1em;
+  line-height: 1.25;
 }
 
 .tmpl-project h1,
 .tmpl-post h1 {
-  font-size: 4em;
+  font-size: 2.5em;
   margin: 0 0 .5em;
 }
 
@@ -1039,6 +1056,15 @@ h2 {
   }
 }
 
+@media (min-width: 1200px) {
+  .tmpl-project h1,
+  .tmpl-post h1 {
+    font-size: 3em;
+    margin: 0 0 .5em;
+  }
+  
+}
+
 /* Hero */
 .hero-section {
   display: grid;
@@ -1055,6 +1081,13 @@ h2 {
 .hero-section p {
   font-size: 1.1em;
   letter-spacing: .035em;
+  line-height: 2;
+}
+
+@media (max-width: 700px) {
+  .hero-section p {
+    font-size: 1em;
+  }
 }
 
 .symbol-align {
@@ -1077,10 +1110,6 @@ h2 {
   justify-self: center;
 } */
 
-.hero-section .container p {
-  line-height: 2;
-}
-
 .hero-section .container p::first-line {
   line-height: 1.6;
 }
@@ -1102,6 +1131,9 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+
+  
+
   .tmpl-post .inner-section {
     padding: 1rem 25rem;
   }
@@ -1347,8 +1379,8 @@ padding-top: 6rem;
 }
 
 @media (max-width: 600px) {
-  .writing-section.writing-section {
-      padding: 5rem 3rem 6rem 2rem;
+  .writing-section {
+      padding: 2rem 3rem 6rem 2rem;
       margin-left: -.25em;
     }
 }
@@ -1388,15 +1420,21 @@ padding-top: 6rem;
 }
 
 .hangout-grid {
+  display: grid;
+  gap: 0;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
  }
 
+ /* .hangout-card {
+  max-height: 425px;
+  margin-bottom: 3em;
+} */
+
  .hangout-card {
-   max-height: 425px;
-   margin-bottom: 3em;
- }
+  margin-bottom: -2em;
+}
 
  .hangout-card--image {
    border-radius: 100%;
