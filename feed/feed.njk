@@ -7,9 +7,15 @@ eleventyExcludeFromCollections: true
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ metadata.title }}</title>
 	<subtitle>{{ metadata.feed.subtitle }}</subtitle>
+	<decription>Recent writings from XimenaVf.com</decription>
 	{% set absoluteUrl %}{{ metadata.feed.path | url | absoluteUrl(metadata.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
+	<image>
+		<url>https://ximenavf.com/assets/img/favicon.png</url>
+		<title>ximenavf.com</title>
+		<link>https://ximenavf.com//</link>
+	</image>
 	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
 	<id>{{ metadata.feed.id }}</id>
 	<author>

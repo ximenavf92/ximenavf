@@ -8,11 +8,12 @@ eleventyExcludeFromCollections: true
   "title": "{{ metadata.title }}",
   "home_page_url": "{{ metadata.url }}",
   "feed_url": "{{ metadata.jsonfeed.url }}",
-  "description": "{{ metadata.description }}",
+  "description": "Recent writings from XimenaVf.com",
   "author": {
     "name": "{{ metadata.author.name }}",
     "url": "{{ metadata.author.url }}"
   },
+  "icon": "https://ximenavf.com/assets/img/favicon.png",
   "items": [
     {%- for post in collections.posts | reverse %}
     {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
