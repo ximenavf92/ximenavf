@@ -8,15 +8,25 @@ layout: layouts/home.njk
 <section class="inner-section hero-section">
     <div class="container">
         <h2><span class="symbol-align">¡</span>Hola!</h2>
-        <p><span class="name-highlight">Ximena</span> <em class="pronunciation">(He-Men-Ah)</em> here, a Mexican born, Texas based designer and developer. A curious and eager self-motivated learner who loves to find and try new things, focusing on designing and developing inclusive and accessible user interfaces and experiences. Passionate in all things web and advocate of uniting the design and developer communities to work together and learn from each other.</p>
+        <p><span class="name-highlight">Ximena</span> <em class="pronunciation">(He-Men-Ah)</em> here, a Mexican born, Texas based designer and developer. Currently a Web Designer at <a href="https://utsa.edu/" target="_blank" rel="noopener">The University of Texas at San Antonio (UTSA)<a>. Always learning and trying new things. This is my little digital corner where I talk and post about all things web, design, code, sketchnotes, work, life, games, books, and more.</p>
         <ul class="button-list">
-            <li><a href="/assets/files/XimenaVilaFerral-Resume-2021.pdf" class="button button-reverse" target="_blank" rel="noopener">My resume</a></li>
-            <li><a href="mailto:hola@ximenavf.com" class="button button-primary--icon">Send me a message</a></li>
+            {# <li><a href="/assets/files/XimenaVilaFerral-Resume-2021.pdf" class="button button-reverse" target="_blank" rel="noopener">My resume</a></li> #}
+            <li><a href="https://doingthings.ximenavf.com/" class="button button-reverse" rel="noopener">Things I've done</a></li>
+            <li><a href="mailto:hola@ximenavf.com" class="button button-primary--icon">Get in touch</a></li>
         </ul>
     </div>
     <div class="container">
         <img src="/assets/img/header-illustration-computers-and-avatar.svg" alt="Illustration of books, computers showing code and design tools and Ximena's avatar" class="hero-illustration" width="685">
     </div>
+</section>
+
+<section id="writing" class="fullwidth-section writing-section">
+    <div class="section-header">
+        <h2>Writing about things</h2>
+    </div>
+      {% set postslist = collections.posts %}
+      {% include "postslist.njk" %}
+      <a href="/writing" class="button button-primary button-icon--rightarrow">View other posts</a>
 </section>
 
 <section id="design" class="inner-section project-section">
@@ -67,7 +77,7 @@ layout: layouts/home.njk
 
 <section id="code" class="inner-section project-section">
     <div class="section-header">
-        <h2>Playing with code</h2>
+          <h2>Playing with code</h2>
         <a href="/code" class="button button-reverse">View more projects</a>
     </div>
 
@@ -111,19 +121,6 @@ layout: layouts/home.njk
         </ul>
 </section>
 
-<!-- TODO: Writing Sections -->
-<!-- <section id="writing" class="inner-section writing-header">
-    <h2>Writing</h2>
-{% set maxPosts = collections.posts.length | min(3) %}
-
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-</section> -->
-
-<!-- TODO: Hangout Sections -->
 <section id="hangout" class="inner-section hangout-section">
         <h2>You can usually find me here…</h2>
         <ul class="hangout-grid">
@@ -142,7 +139,6 @@ layout: layouts/home.njk
         </ul>
 </section>
 
-<!-- TODO: Contact Section -->
 <section id="contact" class="inner-section contact-section">
   <div class="container">
     <div class="form-box">

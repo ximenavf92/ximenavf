@@ -1,18 +1,20 @@
 ---
 layout: layouts/base.njk
+title: Writing about things… ✍️
 templateClass: tmpl-blog
 permalink: /writing/
-# eleventyNavigation:
-#   key: writing
-#   order: 3
+eleventyNavigation:
+  key: writing
+  order: 3
 ---
 
 <section class="inner-section">
-  <h1>Writing about things…</h1>
-
+  <h1>{{ title }}</h1>
+  <br>
+<div class="fullwidth-section writing-section">
 {% set postslist = collections.posts %}
-{% set filters = ' reverse | head(2)' %}
-{% include "postslist.njk" %}
+{% include "postslist.njk"%}
+</div>
 </section>
 
 

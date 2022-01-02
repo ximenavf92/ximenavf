@@ -17,17 +17,18 @@ layout: layouts/home.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
+templateClass: tmpl-tag
 ---
 
 <section class="inner-section">
-<h1>Topic: #{{ tag | uppercase }}</h1>
+<h1>#<span class="capitalize">{{ tag }}</span></h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
 
 
-<p>See <a href="{{ '/tags/' | url }}">all topics</a>.</p>
+<p><a href="{{ '/tags/' | url }}" class="button button-reverse">View all topics</a></p>
 <!-- <p>See <a href="{{ '/tags/' | url }}">all topics</a>.</p>
 {% for tag in collections.tagList %}
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
