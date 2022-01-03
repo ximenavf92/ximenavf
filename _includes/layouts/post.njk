@@ -4,6 +4,7 @@ templateClass: tmpl-post
 ---
 <section class="inner-section">
   <h1>{{ title }}</h1>
+   <date datetime="{{ post.date | htmlDateString }}">{{ page.date | readableDateFull }} &ndash; {{ content | emojiReadTime }}</date>
 
     <hr style="margin: 0 0 3em;">
   

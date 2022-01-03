@@ -1046,6 +1046,11 @@ h2 {
   font-size: 2em;
 }
 
+.tmpl-post date {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
 /* .tmpl-post .inner-section hr + p:first-letter {
     color:  var(--accentColor);
     font-family: var(--headingFont);

@@ -3,7 +3,7 @@
   {% if templateClass === 'tmpl-home'  %}
     {% for post in postslist | reverse | head(3) %}
     <li class="postlist-item">
-        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <date class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</date>
         <h3 class="postlist--post-title">
           <a href="{{ post.url | url }}" class="postlist-link">
         {% if post.data.title %}{{ post.data.title }}
