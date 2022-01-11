@@ -15,14 +15,14 @@ layout: layouts/design-projects.njk
 ## Who is SAMA?
 
 The San Antonio Manufacturers Association (SAMA) is a membership driven organization dedicated to strengthening San Antonio's local and regional manufacturing industry. Serving manufacturing for over 100 Years by supporting a thriving, unique industry through advocacy, workforce development, and networking. The voice of and advocate for the manufacturing industry in the greater San Antonio metropolitan area.
-<!-- ### SAMA's Goals
+### SAMA's Goals
 
 - Proactively monitor manufacturing related issues and participate in local government, ensuring city and regional officials and policy makers understand what’s important for manufacturers to thrive.
 - Promote manufacturing to enhance its perception by the public, schools, community and region.
 - Examine workforce and economic development issues with the aim to ensure that both sustain companies and our San Antonio and South Texas (7 counties).
 - Provide educational opportunities to benefit their members, employees and ensure the future labor pool will have the skills necessary to support growth in our manufacturing industry.
 - Host events that provide relevant information on key issues affecting business and create forums to build relationships across companies and industries.
-- Provide an annual South Texas Regional Manufacturers Trade Show and Conference -->
+- Provide an annual South Texas Regional Manufacturers Trade Show and Conference
 
 ## Project Overview
 

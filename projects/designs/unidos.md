@@ -24,9 +24,14 @@ We had to move quickly and with so many chapters involved we needed one site tha
 
 ![AIGA Unidos' website header](/assets/img/projects/unidos-onespeaker.jpg)
 
-We kept the design simple to highlight the colorful brand developed by Reina Castellanos from AIGA Orlando. After a few quick wireframes and Adobe XD mockups it was coding time, clock was ticking. We needed something fast and simple with an easy workflow that could handle quick updates to design and content as we working simultaneously with the event planning team.
+We kept the design simple to highlight the colorful brand developed by [Reina Castellanos](https://reinavsreina.com/) from [AIGA Orlando](https://orlando.aiga.org/). After a few quick wireframes and Adobe XD mockups it was coding time, clock was ticking. We needed something fast and simple with an easy workflow that could handle quick updates to design and content as we working simultaneously with the event planning team.
 
 ![AIGA Unidos' website header](/assets/img/projects/unidos-speakers.jpg)
+
+<div class="web-2up-grid">
+  <img src="/assets/img/projects/unidos-schedule.jpg" alt="">
+  <img src="/assets/img/projects/unidos-team-and-form.jpg" alt="">
+</div>
 
 It was a clear choice, we would be hosting with [Netlify](https://www.netlify.com/) for a quick and simple deploy workflow using git and GitHub as our version control. There was no need to deal with WordPress installs and plugins, we just needed something up quickly. [Eleventy](https://www.11ty.dev/) to the rescue. [Zach Leatherman's](https://twitter.com/zachleat) static site generator is zero-config yet flexible and with a powerful data model behind it. With 11ty we were able to quickly create templates using [Nunjucks](https://mozilla.github.io/nunjucks/templating.html), JSON and Markdown files to quickly populate the site with event and speaker info as it became available. 
 
