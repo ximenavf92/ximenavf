@@ -22,7 +22,7 @@
             {%- endif -%}
         {% endfor %}   
         </ul>
-        <a href="{{ post.url }}" class="arrow-link">Read more</a> 
+        <a href="{{ post.url }}" class="arrow-link">Read post<span class="visually-hidden">: {{ post.data.title }} </span></a> 
   </li>
   {% endfor %} 
 
@@ -48,7 +48,7 @@
             {%- endif -%}
         {% endfor %}   
         </ul>
-        <a href="{{ post.url }}" class="arrow-link">Keep reading</a> 
+        <a href="{{ post.url }}" class="arrow-link">Read post<span class="visually-hidden">: {{ post.data.title }} </span></a> 
   </li>
   {% endfor %} 
 
