@@ -1,0 +1,121 @@
+@import url("https://use.typekit.net/gct2mqj.css");
+
+:root {
+  --primaryColor: hsl(185, 100%, 35%);
+  --secondaryColor: hsl(209, 100%, 27%);
+  --secondaryColor50: hsla(209, 100%, 27%, .5);
+  --accentColor: hsl(349, 99%, 65%);
+  --lightText: hsl(0, 0%, 98%);
+  --darkText: hsl(215, 100%, 4%);
+  --lightAccent: hsl(0, 0%, 73%);
+  --backgroundColor: hsl(214, 100%, 14%);
+  --backgroundColor: hsl(214, 100%, 10%);
+  --backgroundColor: hsl(214, 100%, 8%);
+  --headingFont: p22-mackinac-pro, serif;
+  --bodyFont: poppins, sans-serif;
+  --headingWeight: 800;
+  --bodyWeightMed: 500;
+  --bodyWeightSemi: 600;
+  --borderRadius: 20px;
+  --borderRadiusSmall: 10px;
+  --borderThickness: 2px;
+}
+
+
+.wrapper {
+  font-family: var(--bodyFont);
+  font-weight: var(--bodyWeightSemi);
+
+  padding: 4vw;
+
+  background-color: var(--backgroundColor);
+  background-image: url('/social-preview-background.jpg');
+  background-size: cover;
+
+  color: white;
+
+  display: grid;
+  align-items: center;
+  gap: 5vh;
+}
+
+#title {
+  align-self: end;
+  font-size: 10vh; /* Rely on textFit to find the right size */
+  line-height: 1.25;
+  /* height: 100%; */
+  font-family: var(--headingFont);
+  padding-bottom: 1rem;
+  border-bottom: solid 10px var(--secondaryColor);
+  margin: 1rem 0 0;
+}
+
+#date {
+  margin: 0 0 .45rem;
+  font-weight: regular;
+  letter-spacing: .02rem;
+  font-size: .9rem;
+}
+
+
+/* Tags */
+.post-tag--list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.post-tag--list-item {
+  width: max-content;
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.post-tag--list-item  {
+  display: inline;
+  width: max-content;
+  vertical-align: text-top;
+  text-transform: uppercase;
+  font-size: 0.6em; /* 10px /16 */
+  letter-spacing: .075em;
+  padding: .5em 1em;
+  margin-left: 0.8em; /* 8px /10 */
+  margin-left: 0;
+  background-color: var(--accentColor);
+  color: var(--lightText);
+  border-radius: 0.15em; 
+  /* border-radius: var(--borderRadiusSmall); */
+  text-decoration: none;
+}
+
+.post-tag--list-item::before {
+  content: '#';
+}
+
+.tmpl-taglist .post-tag--list {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+}
+
+.tmpl-taglist .post-tag--list-item {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+}
+
+#footer {
+  /* width: 10vw;
+  display: flex;
+  align-items: flex-end;
+  gap: 10vh; */
+
+  width: 90vw;
+  text-align: right;
+  margin-top: -10vh;
+  /* position: absolute;
+  bottom: 8vh; */
+}
+
+#logo {
+  height: 20vh;
+}
