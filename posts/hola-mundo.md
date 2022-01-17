@@ -1,7 +1,7 @@
 ---
 title: ¡Hola Mundo!
 description: Welcome to my little corner of the internet. This is my little digital corner where I talk and post about all things web, design, code, sketchnotes, work, life, games, books, and more.
-socialCard: '/assets/img/social/og-2022-hola-mundo.jpg'
+socialCard: 'https://ximenavf.com/assets/img/social/og-2022-hola-mundo.jpg'
 excerpt: Welcome to my little corner of the internet. This is my little digital corner where I talk and post about all things web, design, code, sketchnotes, work, life, games, books, and more.
 date: 2021-12-31
 tags:
