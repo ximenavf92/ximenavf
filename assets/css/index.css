@@ -248,6 +248,20 @@ blockquote p {
   margin: 0;
 }
 
+details {
+  margin: 2rem 0 3rem;
+}
+
+summary {
+  font-family: var(--headingFont);
+  font-size: 1.25rem;
+  letter-spacing: .025em;
+  text-decoration: underline;
+  text-decoration-color: var(--primaryColor);
+  text-decoration-thickness: 2px;
+  margin: 0 0 1rem 0;
+}
+
 /* header {
   border-bottom: 1px dashed var(--lightAccent);
 }
@@ -340,6 +354,14 @@ p code {
 }
 .highlight-line-remove {
   background-color: #902f2f;
+}
+
+
+/*  ==== Layouts ===== */
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* ====== Header ====== */
@@ -956,6 +978,8 @@ button.button-reverse--icon {
 a[href].post-tag,
 a[href].post-tag:visited {
   color: var(--lightText);
+  /* color: var(--darkText); */
+  font-weight: var(--bodyWeightMed);
 }
 
 .tmpl-taglist .post-tag--list {
@@ -1216,6 +1240,14 @@ h2 {
   .main-nav {
     margin: 0 10rem 3rem;
   }
+}
+
+.social-preview-card-details img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: .25rem;
+  border: solid var(--borderThickness) var(--primaryColor);
 }
 
 /* ==== Project Templates ==== */

@@ -16,32 +16,38 @@
   "author": {
     "name": "Ximena Vila Ferral",
     "email": "hola@ximenavf.com",
-    "url": "https://ximenavf.com/about-me/"
+    "url": "https://ximenavf.com/about/"
   },
   "socials": [
     {
         "name": "twitter",
         "icon": "/assets/img/twitter-icon-white.svg",
-        "alt": "follow Ximena on twitter",
+        "alt": "follow Ximena on Twitter",
         "link": "https://twitter.com/ximenavf92"
+    },
+    {
+        "name": "polywork",
+        "icon": "/assets/img/polywork-icon-white.svg",
+        "alt": "follow Ximena on Polywork",
+        "link": "https://www.polywork.com/ximenavf/"
+    },
+    {
+      "name": "github",
+      "icon": "/assets/img/github-icon-white.svg",
+      "alt": "follow Ximena on github",
+      "link": "https://github.com/ximenavf92"
+    },
+    {
+      "name": "instagram",
+      "icon": "/assets/img/instagram-icon-white.svg",
+      "alt": "follow Ximena on instagram",
+      "link": "https://www.instagram.com/ximenavf92/"
     },
     {
         "name": "linkedin",
         "icon": "/assets/img/linkedin-icon-white.svg",
         "alt": "follow Ximena on Linked In",
         "link": "https://www.linkedin.com/in/ximenavilaf/"
-    },
-    {
-        "name": "instagram",
-        "icon": "/assets/img/instagram-icon-white.svg",
-        "alt": "follow Ximena on instagram",
-        "link": "https://www.instagram.com/ximenavf92/"
-    },
-    {
-        "name": "github",
-        "icon": "/assets/img/github-icon-white.svg",
-        "alt": "follow Ximena on github",
-        "link": "https://github.com/ximenavf92"
     },
     {
         "name": "email",

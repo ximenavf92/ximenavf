@@ -1,6 +1,7 @@
 ---
 title: No one knows all the things
-description: 
+description: It's easy to assume the people we look up to know everything, we forget we all have our own experiences and knowledge gaps.
+socialCard: '/assets/img/social/og-2022-no-one-knows-all-the-things.jpg'
 excerpt: It's easy to assume the people we look up to know everything, we forget we all have our own experiences and knowledge gaps.
 date: 2022-01-01
 tags:

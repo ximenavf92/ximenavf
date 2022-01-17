@@ -5,13 +5,33 @@ readingTime: {{ content | emojiReadTime }}
 ---
 <section class="inner-section">
   <h1>{{ title }}</h1>
-   <date datetime="{{ post.date | htmlDateString }}">{{ page.date | readableDateFull }} &ndash; {{ content | emojiReadTime }}</date>
+   <div class="d-flex-between">
+    <date datetime="{{ post.date | htmlDateString }}">{{ page.date | readableDateFull }} &ndash; {{ content | emojiReadTime }}</date>
+   <ul class="post-tag--list" style="margin-top: 0;">
+    {% for tag in tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li class="post-tag--list-item">
+          <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+        </li>
+        {%- endif -%}
+    {% endfor %}   
+    </ul>
+   </div>
 
     <hr style="margin: 0 0 3em;">
   
   {{ content | safe }}
 
   <hr style="margin-top: 4em;">
+  {% if socialCard %}
+    <details class="social-preview-card-details">
+      <p>This is the image that will show up when this link is shared on social media.</p>
+      <img src="{{ socialCard }}" alt="">
+      <summary>Social Preview Card</summary>
+    </details>
+  {% endif %}
+
   <ul class="post-simple-navigation">
     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
     {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}

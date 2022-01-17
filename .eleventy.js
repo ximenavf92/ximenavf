@@ -14,7 +14,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(emojiReadTime, {
     emoji: "📖",
-    label: "minute read"
+    label: "-minute read",
+    bucketSize: 5
   });
 
   eleventyConfig.setDataDeepMerge(true);
