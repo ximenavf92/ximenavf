@@ -38,6 +38,12 @@
       "link": "https://github.com/ximenavf92"
     },
     {
+      "name": "dribbble",
+      "icon": "/assets/img/dribbble-icon-white.svg",
+      "alt": "follow Ximena on dribbble",
+      "link": "https://dribbble.com/ximenavf"
+    },
+    {
       "name": "instagram",
       "icon": "/assets/img/instagram-icon-white.svg",
       "alt": "follow Ximena on instagram",
