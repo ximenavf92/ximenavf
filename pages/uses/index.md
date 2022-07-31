@@ -29,7 +29,7 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 - **PC**: Lenovo Legion 7 (15"), Windows 10 – *(Thanks to the amazing [RWC](https://patreon.com/cassidoo) community)* 😊
 - **Work Mac**: MacBook Pro (16-inch, 2019), Big Sur
     - 2.3 GHz 8-Core Intel Core i9, 32 GB memory
-- iPad Mini – *(with Alfred remote)*
+- iPad Pro 10
 -  **Monitors**:
     - Old Mac LED Cinema Display – *(courtesy of my awesome Design Professor, Denny Fagan.)*
     - Dell U2419H – *another freebie!*
@@ -74,14 +74,14 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 - Zshell
     - [OhMyZsh](https://ohmyz.sh/)
     - [Starship.rs](http://Starship.rs)
-- Supporting Open Source by using the terminal
-  - [Flossbank](https://flossbank.com/)
+<!-- - Supporting Open Source by using the terminal
+  - [Flossbank](https://flossbank.com/) -->
 
 #### 🌐 The Internets & Other Dev Apps
 - Browsers
     - *Primary:*
         - [Edge](https://www.microsoft.com/en-us/edge?r=1) – *yes Edge, it's actually pretty good*
-    - *Dev:*
+    - *Dev Testing:*
         - [Sizzy](https://sizzy.co/)
         - [Chrome](https://www.google.com/chrome/)
         - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -128,25 +128,26 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
     - Teams, *ugh… sadly*
 - **Email:** 
     - [Spark](https://sparkmailapp.com)
-- **Shortcuts:** 
+- **Launcher, Spotlight, Shortcuts:**
+    - [Raycast](https://www.raycast.com/) 
     - [Alfred App](https://alfredapp.com)
 - **Calendar:** 
     - [Fantastical](https://flexibits.com/fantastical) – *Thanks [Ben Hong](https://twitter.com/bencodezen)!*
-- **Note-taking:** 
+- **Note-taking & Personal Projeet Management:** 
     - [Obsidian](https://obsidian.md) – *(Not a Cult™️)*
-- **Music:**
-    - Spotify
-    - [PugetSound](https://pugetsound.party/) for shared queues with friends
-- **Personal Project Management:** 
     - [Notion](https://notion.so)
+- **Focus & Flow:**
+    - [Centered](https://www.centered.app/) 
+- **Music:**
+    - [Spotify](https://www.spotify.com/)
+    - [PugetSound](https://pugetsound.party/) for shared queues with friends
 - **Extensions/Apps**
     - *Better writing:* [Grammarly](https://grammarly.com)
-    - *Language Learning:* [Toucan - Learn a new language, browser extension](https://jointoucan.com/)
+    <!-- - *Language Learning:* [Toucan - Learn a new language, browser extension](https://jointoucan.com/) -->
     - *Inspiration:* [Muzli Design Inspiration](https://muz.li/)
 - **Passwords & Auth:**
     - [Authy](https://authy.com)
     - [1Password](https://1password.com)
-    - [mSecure](https://msecure.com)
 - **Mac Apps:**
     - [Hand Mirror](https://handmirror.app/): *menu bar app to check your face before jumping on a call*
     - [Rocket Emoji](https://matthewpalmer.net/rocket/): *Discord/Slack emojis anywhere on your mac*
@@ -157,9 +158,10 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 
 ---
 
-- iPhone 7 *(holding on to my "button" and TouchID for as long as I can)*
-- [AirPods](https://www.apple.com/airpods-2nd-generation/)
-- [Apple Watch Series 3](https://www.apple.com/apple-watch-series-3/)
+- [iPhone 13](https://www.apple.com/iphone-13/) *(I had to give in, I miss my "button" and TouchID!!* 😭)
+<!-- - iPhone 7 *(holding on to my "button" and TouchID for as long as I can)* -->
+- [AirPods (3rd generation)](https://www.apple.com/airpods-3rd-generation/)
+- [Apple Watch Series 3 – Nike Edition](https://www.apple.com/apple-watch-series-3/)
 - [Netlify Coffee Mug](https://swag.netlify.com/)
 - [Zelda Leather Notebook](https://www.amazon.com/Vintage-Leather-Notebook-journal-holder-Legend/dp/B01GPUOHO8/ref=asc_df_B01GPUOHO8/?tag=hyprod-20&linkCode=df0&hvadid=312123579962&hvpos=&hvnetw=g&hvrand=1166012193657949239&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028099&hvtargid=pla-521984809329&psc=1&tag=&ref=&adgrpid=65834404201&hvpone=&hvptwo=&hvadid=312123579962&hvpos=&hvnetw=g&hvrand=1166012193657949239&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028099&hvtargid=pla-521984809329)
 - [Field Notes](https://fieldnotesbrand.com/)
