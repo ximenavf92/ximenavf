@@ -159,7 +159,6 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 ---
 
 - [iPhone 13](https://www.apple.com/iphone-13/) *(I had to give in, I miss my "button" and TouchID!!* 😭)
-<!-- - iPhone 7 *(holding on to my "button" and TouchID for as long as I can)* -->
 - [AirPods (3rd generation)](https://www.apple.com/airpods-3rd-generation/)
 - [Apple Watch Series 3 – Nike Edition](https://www.apple.com/apple-watch-series-3/)
 - [Netlify Coffee Mug](https://swag.netlify.com/)
@@ -167,4 +166,5 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 - [Field Notes](https://fieldnotesbrand.com/)
 - [Amazon Echo Dot](https://www.amazon.com/Echo-Dot/dp/B07FZ8S74R) + [Amazon Echo Auto](https://www.amazon.com/Echo-Auto-Add-Alexa-your/dp/B07VTK654B)
 - [Kindle Paperwhite](https://www.amazon.com/Amazon-Kindle-Paperwhite-6-Inch-4GB-eReader/dp/B00OQVZDJM)
+<!-- - iPhone 7 *(holding on to my "button" and TouchID for as long as I can)* -->
 </div>
