@@ -1,6 +1,6 @@
 <br>
 <ul class="project-grid">
-{% for project in collections.designs  %}
+{% for project in collections.designs.reverse()  %}
 <li>
 <article class="project-card">
 <a href="{{ project.url }}">
