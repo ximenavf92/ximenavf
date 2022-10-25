@@ -1293,7 +1293,7 @@ h2 {
 .web-2up-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 2em;
   margin: 1em 0 2em;
 }

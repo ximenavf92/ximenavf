@@ -12,17 +12,10 @@
         "statusBarItem.hoverBackground": "#00d3e5",
         "titleBar.activeBackground": "#00a4b2",
         "titleBar.activeForeground": "#e7e7e7",
-<<<<<<< HEAD
         "titleBar.inactiveBackground": "#00478a99",
         "titleBar.inactiveForeground": "#e7e7e799",
         "sash.hoverBorder": "#0061bd",
         "statusBarItem.remoteBackground": "#00478a",
-=======
-        "titleBar.inactiveBackground": "#00a4b299",
-        "titleBar.inactiveForeground": "#e7e7e799",
-        "sash.hoverBorder": "#00d3e5",
-        "statusBarItem.remoteBackground": "#00a4b2",
->>>>>>> a9853e2b1ec710477e735eaa45222faf412272aa
         "statusBarItem.remoteForeground": "#e7e7e7"
     },
     "peacock.color": "#00A4B2",
