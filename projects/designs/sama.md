@@ -24,7 +24,7 @@ The San Antonio Manufacturers Association (SAMA) is a membership driven organiza
 - Host events that provide relevant information on key issues affecting business and create forums to build relationships across companies and industries.
 - Provide an annual South Texas Regional Manufacturers Trade Show and Conference
 
-## Project Overview
+## 🗂️ Project Overview
 
 SAMA had an outdated WordPress that did not effectively convey to users what SAMA is about and what they do for the manufacturing community or the value of their content and membership. This project was a complete redesign including new content. The new design needs to be clean to focus on the content as well as flexible in order to adapt to the new brand being developed by another agency.
 
@@ -38,7 +38,7 @@ SAMA had an outdated WordPress that did not effectively convey to users what SAM
   <img src="/assets/img/projects/sama-mobile-menu.jpg" alt="SAMA Mobile">
 </div>
 
-## Style Guide
+## 🎨 Design Style Guide
 
 At the beginning of the project a style board was developed with the desired aesthetic and potential components. During and after the design stage a development [style guide](https://sama-styles.netlify.app/) was also created to aid the design/development handoff.
 
@@ -47,7 +47,7 @@ At the beginning of the project a style board was developed with the desired aes
   <img src="/assets/img/projects/sama-styleboard-2.jpg" alt="">
 </div>
 
-## Key Pages 
+## 📑 Key Pages 
 
 <div class="web-2up-grid">
   <img src="/assets/img/projects/sama-home.jpg" alt="">

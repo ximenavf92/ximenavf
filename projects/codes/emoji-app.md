@@ -6,7 +6,6 @@ image: /assets/img/projects/emojiapp-thumbnail-1.jpg
 date: 2021-05-20
 tags:
   - code-projects
-  - code-feat
 layout: layouts/code-projects.njk
 webLink: https://ximenavf92.github.io/my-emoji-app/
 githubLink: https://github.com/ximenavf92/my-emoji-app 
