@@ -1064,7 +1064,7 @@ h2 {
 .tmpl-blog h2,
 .tmpl-project h2,
 .tmpl-page h2 {
-  font-size: 2em;
+  font-size: 2.15em;
   margin: 1.25em auto .25em;
 }
 
@@ -1072,7 +1072,7 @@ h2 {
 .tmpl-blog h3,
 .tmpl-project h3,
 .tmpl-page h3 {
-  font-size: 2em;
+  font-size: 1.35em;
 }
 
 .tmpl-post date {
