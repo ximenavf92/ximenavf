@@ -27,8 +27,8 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 #### 💻 Computers + Monitors
 - **Mac**: MacBook Pro 2016 (15") , Catalina
 - **PC**: Lenovo Legion 7 (15"), Windows 10 – *(Thanks to the amazing [RWC](https://patreon.com/cassidoo) community)* 😊
-- **Work Mac**: MacBook Pro (16-inch, 2019), Big Sur
-    - 2.3 GHz 8-Core Intel Core i9, 32 GB memory
+- **Work Mac**: MacBook Pro (16-inch, 2021), Monterey
+    - Apple M1 Pro, 16 GB memory
 - iPad Pro 10
 -  **Monitors**:
     - Old Mac LED Cinema Display – *(courtesy of my awesome Design Professor, Denny Fagan.)*
@@ -62,6 +62,7 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 #### 👩‍💻 Editor & Terminal
 - [VScode](https://code.visualstudio.com/)
     - *Themes:*
+        - [Houston](https://marketplace.visualstudio.com/items?itemName=astro-build.houston)
         - [Fortnite theme by Sarah Drasner](https://marketplace.visualstudio.com/items?itemName=sdras.fortnite-vscode-theme)
         - [Night Owl by Sarah Drasner](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)
         - [Dracula](https://draculatheme.com/)
@@ -125,19 +126,19 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
     - [Discord](https://discord.com)
     - [WhatsApp](https://whatsapp.com)
     - [Slack](https://slack.com)
-    - Teams, *ugh… sadly*
-- **Email:** 
+- **Email:**
     - [Spark](https://sparkmailapp.com)
 - **Launcher, Spotlight, Shortcuts:**
-    - [Raycast](https://www.raycast.com/) 
+    - [Raycast](https://www.raycast.com/)
     - [Alfred App](https://alfredapp.com)
-- **Calendar:** 
+- **Calendar:**
     - [Fantastical](https://flexibits.com/fantastical) – *Thanks [Ben Hong](https://twitter.com/bencodezen)!*
-- **Note-taking & Personal Projeet Management:** 
+- **Note-taking & Personal Projeet Management:**
     - [Obsidian](https://obsidian.md) – *(Not a Cult™️)*
     - [Notion](https://notion.so)
 - **Focus & Flow:**
-    - [Centered](https://www.centered.app/) 
+    - [Akiflow](https://akiflow.com/)
+    - [Centered](https://www.centered.app/)
 - **Music:**
     - [Spotify](https://www.spotify.com/)
     - [PugetSound](https://pugetsound.party/) for shared queues with friends
