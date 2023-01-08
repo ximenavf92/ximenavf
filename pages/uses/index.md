@@ -161,7 +161,7 @@ The year 2020 moved me and many of us, into a work from home setup from one day 
 
 - [iPhone 13](https://www.apple.com/iphone-13/) *(I had to give in, I miss my "button" and TouchID!!* 😭)
 - [AirPods (3rd generation)](https://www.apple.com/airpods-3rd-generation/)
-- [Apple Watch Series 3 – Nike Edition](https://www.apple.com/apple-watch-series-3/)
+- [Apple Watch Series 7 – Nike Edition](https://www.apple.com/apple-watch-series-7/)
 - [Netlify Coffee Mug](https://swag.netlify.com/)
 - [Zelda Leather Notebook](https://www.amazon.com/Vintage-Leather-Notebook-journal-holder-Legend/dp/B01GPUOHO8/ref=asc_df_B01GPUOHO8/?tag=hyprod-20&linkCode=df0&hvadid=312123579962&hvpos=&hvnetw=g&hvrand=1166012193657949239&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028099&hvtargid=pla-521984809329&psc=1&tag=&ref=&adgrpid=65834404201&hvpone=&hvptwo=&hvadid=312123579962&hvpos=&hvnetw=g&hvrand=1166012193657949239&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028099&hvtargid=pla-521984809329)
 - [Field Notes](https://fieldnotesbrand.com/)
